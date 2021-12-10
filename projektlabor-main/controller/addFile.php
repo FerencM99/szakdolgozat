@@ -26,5 +26,5 @@
         $fdb->uploadfile($filename, $description, $Owner, $cat, $public);
     }
     
-header('Location:../view/main.php');
+//header('Location:../view/main.php');
 ?>    

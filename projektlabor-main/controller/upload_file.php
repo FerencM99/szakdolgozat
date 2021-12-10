@@ -1,10 +1,5 @@
 <!DOCTYPE html>
 <html>
-<div style="margin-top: 0px;">
-    <?php
-   include '../view/header.php';
-    ?>
-</div>
 <head>
     <title>File Upload</title>
 </head>
@@ -13,10 +8,10 @@
 <form method="post" enctype="multipart/form-data">
     <label>Title</label>
     <input type="text" name="title">
+    <label>Leírás</label>
+    <input type="text" name="desc">
     <label>File Upload</label>
     <input type="File" name="file">
-    <label>Descriptions</label>
-    <input type="Desc" name="desc">
     <input type="submit" name="submit">
  
  
@@ -38,20 +33,22 @@ if (isset($_POST["submit"]))
  {
      #retrieve file title
         $title = $_POST["title"];
+
+        $desc = $_POST["desc"];
+     
     #file name with a random number so that similar dont get replaced
-     $pname = $_FILES["file"]["name"];
+     $pname = rand(1000,10000)."-".$_FILES["file"]["name"];
  
     #temporary file name to store file
     $tname = $_FILES["file"]["tmp_name"];
-
-    #upload directory path
-    $uploads_dir = 'uploads';
+   
+     #upload directory path
+$uploads_dir = 'uploads';
     #TO move the uploaded file to specific location
     move_uploaded_file($tname, '../'.$uploads_dir.'/'.$pname);
-
-
+ 
     #sql query to insert into database
-    $sql = "INSERT into files(Filename, Link, Username, CatName, Public) VALUES('$title','$pname')";
+    $sql = "INSERT into files(Filename,Link) VALUES('$pname','$title','$desc')";
  
     if(mysqli_query($conn,$sql)){
  
@@ -61,13 +58,6 @@ if (isset($_POST["submit"]))
         echo "Error";
     }
 }
- //header('Location:../view/main.php');
-
+ 
  
 ?>
-
-<div>
-<?php
-    include '../view/footer.php';
-    ?>
-</div>
