@@ -10,7 +10,6 @@ class categorysDB extends db
     }
     function deletecategory($ID) {
         
-            $this->select("UPDATE `files` SET `CategoryID`=1 WHERE `CategoryID`=".$ID.";");
             $this->select("DELETE FROM `categorys` WHERE `categorys`.`ID` = ".$ID.";");
             $this->log($ID."-es kategória törölve");
     }

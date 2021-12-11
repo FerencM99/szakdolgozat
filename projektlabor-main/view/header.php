@@ -1,7 +1,4 @@
 <?php
-
-
-session_start();
 /*/
 ---
 Tesztek
@@ -11,8 +8,13 @@ $_SESSION['userlvl']=2;
 $_SESSION['userlvl']=2;
 
 
-if (session_status()==1) {
+  session_start();
 
+//If User is logged in the session['user_logged_in'] will be set to true
+
+//if user is Not Logged in, redirect to login.php page.
+if (isset($_SESSION['user_logged_in']) == FALSE ) {
+  header('Location:../view/login.php');
 }
 ?>
 
@@ -58,7 +60,7 @@ body {
 <div class="topnav">
     <a class="active" href="main.php">Főoldal</a>
     <?php
-    if ($_SESSION['userlvl']==2) {
+    if ($_SESSION['userlvl']==0) {
         ?>
         <a href="reg.php">felhasználó létrehozás</a>
         <a href="kezeles.php">Felhasználó kezelés</a>

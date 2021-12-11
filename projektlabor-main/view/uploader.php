@@ -101,7 +101,7 @@ include '../model/filesDB.php';
 <div>
 
 	<p align ="right">
-		<input type="button"	style="width: 210px; right: 500px;" class="open-button"  onclick="openForm()" value="új elem hozzáadása">
+		<input type="button"	style="width: 210px; right: 500px;" class="open-button"  onclick="document.location='upload_file.php'" value="új elem hozzáadása">
  		<input type="button" 	onclick="document.location='logout.php'" class="button" value="Kijelentkezes">
 	</p>
 
@@ -123,12 +123,10 @@ include '../model/filesDB.php';
     <option value="2">Default</option>
   </select><br>
 
-  <br>
-
-  <input type="file" id="actual-btn" hidden/>
+  <br><input type="file" name="file" id="actual-btn" hidden/>
   <label id="lbl" for="actual-btn" >Válassz fájlt</label>
   <span id="file-chosen">Nincs fájl kiválasztva</span>
-  <br><br><input type="submit" name="submit" required onclick="document.location='../controller/addFile.php'" class="btn"/>
+  <br><br><input type="submit"  required onclick="document.location='../controller/addFile.php'" class="btn"/>
       <button type="submit" class="btn cancel" onclick="closeForm()">Bezár</button>
   </form>
 </div>
@@ -136,12 +134,8 @@ include '../model/filesDB.php';
 <table style="margin-left:10%;" id="table"><thead><tr>
 	<th style="width:50px;">ID</th>
 	<th style="width:250px;">Fájl neve</th>
-  <th style="width:150px;">Kategória</th> 
-  <th style="width:150px;">Neptun kód</th> 
   <th style="width:500px;">Leírás</th> 
-	<th style="width:50px;">Publikus</th>
 	<th style="width:50px;">Törlés</th>
-	<th style="width:50px;">Módosítás</th>
     </thead>
     <tbody>
       <?php
@@ -154,12 +148,8 @@ include '../model/filesDB.php';
   <tr>
   <td><?php echo $res[$i]['ID'];?></td>
 	<td><?php echo $res[$i]['Filename'];?></td>
-  <td><?php echo $res[$i]['CatName'];?></td>
-  <td><?php echo $res[$i]['Username'];?></td>
   <td><?php echo $res[$i]['Link'];?></td>
-	<td><?php echo $res[$i]['Public'];?></td>
   <td><a href="../controller/delete_file.php?id=<?php echo $res[$i]['ID']; ?>"><img src="img/x.png" type="submit" ></a> </td>
-  <td><a href="editfile.php?id=<?php echo $res[$i]['ID']; ?>" style="right=550px ;"><img src="img/szerk3.png" type="submit"></a></td>
   </tr>
 <?php
 }

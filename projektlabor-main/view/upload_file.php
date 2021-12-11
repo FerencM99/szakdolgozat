@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<?php 
+ include '../view/header.php';
+ ?>
+
     <title>File Upload</title>
 </head>
 <body>
  
-<form method="post" enctype="multipart/form-data">
-    <label>Title</label>
-    <input type="text" name="title">
+<form style="margin-top: 20px;" method="post" enctype="multipart/form-data">
     <label>Leírás</label>
-    <input type="text" name="desc">
+    <input type="text" name="title">
     <label>File Upload</label>
     <input type="File" name="file">
     <input type="submit" name="submit">
@@ -32,12 +38,10 @@ $conn = mysqli_connect($localhost,$dbusername,$dbpassword,$dbname);
 if (isset($_POST["submit"]))
  {
      #retrieve file title
-        $title = $_POST["title"];
-
-        $desc = $_POST["desc"];
+        $link = $_POST["title"];
      
     #file name with a random number so that similar dont get replaced
-     $pname = rand(1000,10000)."-".$_FILES["file"]["name"];
+     $pname = $_FILES["file"]["name"];
  
     #temporary file name to store file
     $tname = $_FILES["file"]["tmp_name"];
@@ -48,7 +52,7 @@ $uploads_dir = 'uploads';
     move_uploaded_file($tname, '../'.$uploads_dir.'/'.$pname);
  
     #sql query to insert into database
-    $sql = "INSERT into files(Filename,Link) VALUES('$pname','$title','$desc')";
+    $sql = "INSERT into files(Filename,Link) VALUES('$pname','$link')";
  
     if(mysqli_query($conn,$sql)){
  
