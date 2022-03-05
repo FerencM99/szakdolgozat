@@ -43,21 +43,22 @@ class usersDB extends db
         }
         else {
             $result[0]['code']=200;
-            $this->log('Sikeres bejelentkezés ('.$username.')');
+            $r = $this->getLVL($username);
+            $this->log('Sikeres bejelentkezés ('.$username.', '.$r.')');
+            echo "siker!";
         }
-
-
-
         return $result;
+        alert("bejelentkeztel $username"); 
+
     }
 
-    function register($username,$pw,$userlvl=0) {
+    function register($username,$pw,$userlvl) {
 
         $check = $this->select("SELECT * FROM `users` WHERE Username like '".$username."';");
 
         if (count($check)==0) {
             $this->select("INSERT INTO `users`(`Username`, `Password`, `Userlvl`) VALUES ('" . $username . "' , '" . $pw . "' , '" . $userlvl . "');");
-            $this->log('Sikeres felhasználó regisztrálás ('.$username.')');
+            $this->log('Sikeres felhasználó regisztrálás ('.$username.', '.$userlvl.')');
 
             $result = 1;
         }

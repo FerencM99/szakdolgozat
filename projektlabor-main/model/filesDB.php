@@ -4,8 +4,8 @@ require "db.php";
 
 class filesDB extends db
 {
-    function uploadfile($filename, $link, $Username, $CatName, $public) {
-        $this->select("INSERT INTO `files`(`Filename`, `Link`, `Username`, `CatName`, `Public`) VALUES ('".$filename."','".$link."',".$Username.",".$CatName.",".$public.");");
+    function uploadfile($filename, $link, $Username, $CatName) {
+        $this->select("INSERT INTO `files`(`Filename`, `Link`, `Username`, `CatName`) VALUES ('".$filename."','".$link."','".$Username."','".$CatName."');");
         $this->log($filename." fájl feltöltésre került ".$Username." felhasználó által a ".$CatName." kategóriába ( ".$link." )");
 
     }

@@ -16,7 +16,7 @@ footer {
 </head>
 <body>
 <footer>
-  <h1 href="mailto:diplomaKozpont@gmail.com">diplomaKozpont@gmail.com</h1></p>
+  <h1 href="mailto:diplomaKozpont@gmail.com">diplomaKozpont@gmail.com</h1>
 </footer>
 </body>
 </html>

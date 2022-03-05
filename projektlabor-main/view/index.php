@@ -27,10 +27,7 @@ Bejelentkezés</div>
           <input type="password" id="password" name="password" required placeholder="Jelszó">
         </div>
 <div class="content">
-          <div class="checkbox">
-            <input type="checkbox" id="remember-me">
-            <label for="remember-me"> emlékezz rám</label>
-          </div><br>
+   
 <div>
     <button class="btn" type="submit" value="Submit">Bejelentkezés</button>
         </div>

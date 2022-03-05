@@ -22,7 +22,7 @@ Regisztráció</div>
           <input name="psw" type="psw" required placeholder="Jelszó">
         </div>
 
-<div class="field">
+<div name="userlvl" class="field">
     <select class="select" name="userlvl" id="userlvl">
         <option value="def" disabled selected>Felhasználó szintje</option>
         <option value="2">Admin</option>

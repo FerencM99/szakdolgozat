@@ -1,0 +1,1286 @@
+﻿1
+00:00:01,541 --> 00:00:04,708
+A dűnetenger taszkeneit képviselem.
+
+2
+00:00:05,208 --> 00:00:08,083
+A Kintan Striderek
+már begyűjtötték a védelmi pénzt
+
+3
+00:00:08,166 --> 00:00:10,916
+azért a területért,
+amire maguk igényt tartanak fent.
+
+4
+00:00:25,052 --> 00:00:27,778
+<i>Az előző részek tartalmából...</i>
+
+5
+00:00:31,750 --> 00:00:33,833
+<i>Bib gazda figyelő tekintete alatt</i>
+
+6
+00:00:33,916 --> 00:00:36,458
+<i>Mos Espa három részre szakadt.</i>
+
+7
+00:00:36,541 --> 00:00:40,875
+<i>Törékeny szövetségekre támaszkodott,
+hogy megtartsa címét és tekintélyét.</i>
+
+8
+00:00:40,958 --> 00:00:42,625
+Elnézést kell kérnem, uram...
+
+9
+00:00:42,708 --> 00:00:44,458
+De senki sem tiszteli Önt.
+
+10
+00:00:45,541 --> 00:00:47,583
+Az utcákon káosz honol.
+
+11
+00:00:47,666 --> 00:00:50,125
+Nincs munka, ó, nagy daimyo.
+
+12
+00:00:50,208 --> 00:00:52,500
+Akkor nekem fogtok dolgozni.
+
+13
+00:00:52,583 --> 00:00:55,050
+Remélem, legalább olyan jól harcolsz,
+ahogy <i>dankkal</i> dobálózol.
+
+14
+00:01:06,791 --> 00:01:08,333
+Itt a foglyotok.
+
+15
+00:01:08,416 --> 00:01:13,166
+A tiétek, ha lemondtok Jabba
+mindennemű tatuini hagyatékáról.
+
+16
+00:01:13,958 --> 00:01:15,541
+{\an8}<font color="#C89D7C">Ő a mi áldozatunk neked.</font>
+
+17
+00:01:18,625 --> 00:01:19,791
+Engedd el.
+
+18
+00:01:20,708 --> 00:01:22,875
+Fogadd el ezt,
+egy ex-fejvadásztól:
+
+19
+00:01:22,958 --> 00:01:25,291
+ne dolgozz scuglyukaknak.
+
+20
+00:01:25,833 --> 00:01:27,041
+Nem éri meg.
+
+21
+00:03:38,125 --> 00:03:39,416
+Nem ma, öreglány.
+
+22
+00:03:40,708 --> 00:03:42,583
+Még mindig túl sok az őr.
+
+23
+00:03:44,458 --> 00:03:45,958
+Szerezzünk valami ennivalót.
+
+24
+00:04:15,750 --> 00:04:16,750
+Tessék.
+
+25
+00:04:22,458 --> 00:04:23,458
+Jó étvágyat!
+
+26
+00:05:40,958 --> 00:05:45,262
+<font color="#4c7259">BOBA FETT KRÓNIKÁI</font>
+
+27
+00:05:46,146 --> 00:05:50,512
+<font color="#4c7259">IV. fejezet
+A GYÜLEKEZŐ VIHAR</font>
+
+28
+00:05:50,537 --> 00:05:52,942
+<font color="#4c7259">fordította: ktome</font>
+
+29
+00:07:24,666 --> 00:07:26,458
+Nem túl öreg maga ahhoz,
+hogy itt legyen?
+
+30
+00:07:26,583 --> 00:07:28,583
+Módosításokra van szüksége.
+
+31
+00:07:30,750 --> 00:07:33,083
+Nem sétálhat be csak úgy.
+Időpontot kell kérnie.
+
+32
+00:07:38,125 --> 00:07:40,500
+Ez a nő haldoklik.
+
+33
+00:07:44,625 --> 00:07:46,000
+Hát miért nem ezzel kezdte?
+
+34
+00:08:49,291 --> 00:08:50,291
+Kész.
+
+35
+00:09:00,541 --> 00:09:01,875
+Nem feded le?
+
+36
+00:09:03,166 --> 00:09:05,083
+Lefedni ezt a műalkotást?
+
+37
+00:09:33,267 --> 00:09:34,267
+Igyál.
+
+38
+00:09:43,166 --> 00:09:44,166
+Mi történt?
+
+39
+00:09:45,958 --> 00:09:47,833
+Gyomron lőttek és haldokoltál.
+
+40
+00:09:48,833 --> 00:09:50,541
+Megmentettem az életed.
+
+41
+00:10:03,708 --> 00:10:04,875
+Mit csináltál velem?
+
+42
+00:10:05,458 --> 00:10:08,916
+Elvittelek egy módosítóhoz
+Mos Eisley külvárosában.
+
+43
+00:10:10,375 --> 00:10:13,333
+Ennyire futotta
+a körülményeket tekintve.
+
+44
+00:10:18,458 --> 00:10:19,625
+Fogd a fekete dinnyét.
+
+45
+00:10:21,666 --> 00:10:23,333
+Segít helyrejönnöd.
+
+46
+00:10:33,708 --> 00:10:35,208
+Hozzá kell szokni,
+
+47
+00:10:36,250 --> 00:10:37,875
+de idővel még kívánni is fogod.
+
+48
+00:10:43,125 --> 00:10:47,708
+Fennec Shand mestergyilkos vagy
+a Középső Gyűrűről.
+
+49
+00:10:51,875 --> 00:10:54,083
+Többet érek élve, igaz?
+
+50
+00:10:55,541 --> 00:10:56,541
+Igen.
+
+51
+00:10:58,166 --> 00:10:59,708
+A fejpénzem dupláját fizetem.
+
+52
+00:11:01,583 --> 00:11:02,875
+Nem kell a pénz.
+
+53
+00:11:11,000 --> 00:11:12,041
+És te ki vagy?
+
+54
+00:11:13,291 --> 00:11:14,666
+Boba Fett.
+
+55
+00:11:19,291 --> 00:11:20,333
+Boba meghalt.
+
+56
+00:11:22,000 --> 00:11:23,000
+Engem...
+
+57
+00:11:24,262 --> 00:11:27,250
+...sorsomra hagytak
+a Tatuin homokdűnéi közt.
+
+58
+00:11:28,916 --> 00:11:29,916
+Ahogy téged.
+
+59
+00:11:33,000 --> 00:11:35,166
+A buckalakók mentettek meg.
+
+60
+00:11:37,541 --> 00:11:40,125
+Befogadtak,
+közéjük tartozóként kezeltek.
+
+61
+00:11:43,000 --> 00:11:44,416
+Próbáltam segíteni rajtuk.
+
+62
+00:11:46,833 --> 00:11:50,458
+Ehelyett megölettem őket
+egy nikto siklóbandával.
+
+63
+00:11:51,916 --> 00:11:54,541
+Egy siklóbanda győzte le
+a taszkeneket?
+
+64
+00:11:56,250 --> 00:11:57,875
+Valószínűtlen.
+
+65
+00:12:00,125 --> 00:12:01,541
+Azt akarom, hogy segíts nekem.
+
+66
+00:12:03,041 --> 00:12:05,625
+Segíts visszaszerezni a <i>Firespray</i> hajómat.
+
+67
+00:12:12,500 --> 00:12:13,541
+Hol van?
+
+68
+00:12:13,625 --> 00:12:15,416
+Jabba, a hutt palotájában.
+
+69
+00:12:17,875 --> 00:12:20,958
+Bib Fortuna foglalta el a területeit.
+
+70
+00:12:21,041 --> 00:12:23,000
+Most ő uralkodik a palotából.
+
+71
+00:12:24,333 --> 00:12:28,166
+Ha a hajó tényleg a tiéd,
+miért nem kéred el egyszerűen?
+
+72
+00:12:30,958 --> 00:12:33,166
+Mert talán nem tetszene a válasz,
+amit kapnék.
+
+73
+00:12:35,416 --> 00:12:37,916
+A páncélom nélkül
+kevésbé vagyok meggyőző.
+
+74
+00:12:39,500 --> 00:12:40,791
+Ha segítek...
+
+75
+00:12:43,208 --> 00:12:45,166
+kvittek vagyunk.
+
+76
+00:12:48,333 --> 00:12:49,833
+Ahogy akarod.
+
+77
+00:13:23,125 --> 00:13:24,666
+Ott van a hajód.
+
+78
+00:13:25,875 --> 00:13:27,541
+Tudod, hogy nagyjából hány őr van?
+
+79
+00:13:28,208 --> 00:13:29,541
+Nem tudom.
+
+80
+00:13:30,166 --> 00:13:32,375
+A kapu kinyílik,
+néhány bemegy, néhány kijön.
+
+81
+00:13:33,666 --> 00:13:34,875
+Nézzük meg közelebbről!
+
+82
+00:14:51,125 --> 00:14:52,125
+Itt az idő.
+
+83
+00:14:53,083 --> 00:14:55,333
+Ideje elbúcsúznunk, barátom.
+
+84
+00:14:55,958 --> 00:14:57,375
+Jól szolgáltál.
+
+85
+00:14:59,666 --> 00:15:01,000
+Igen, tudom.
+
+86
+00:15:01,083 --> 00:15:04,250
+Te is hiányozni fogsz, öreglány.
+
+87
+00:15:04,333 --> 00:15:06,625
+Most menj.
+
+88
+00:15:07,125 --> 00:15:10,000
+Keress más banthákat!
+Csinálj kis banthákat!
+
+89
+00:15:11,291 --> 00:15:12,291
+Eredj!
+
+90
+00:15:18,041 --> 00:15:21,083
+Szabadon járhatod a dűnetengert.
+
+91
+00:15:24,958 --> 00:15:28,250
+Nem kellett volna várnod addig,
+míg visszaszerezzük a hajódat?
+
+92
+00:15:29,750 --> 00:15:30,750
+Miért?
+
+93
+00:15:32,416 --> 00:15:34,250
+Vagy megszerzem,
+vagy meghalok.
+
+94
+00:15:35,916 --> 00:15:37,625
+Hamarosan te is szabad leszel.
+
+95
+00:15:43,250 --> 00:15:44,375
+Mihez kezdesz ezután?
+
+96
+00:15:45,291 --> 00:15:46,833
+Megkeresem a páncélom.
+
+97
+00:15:48,708 --> 00:15:51,708
+Aztán végzek azzal
+a dagadt disznóval.
+
+98
+00:15:53,083 --> 00:15:54,416
+Átveszem a helyét.
+
+99
+00:15:55,583 --> 00:15:56,875
+Egy <i>Gotra</i> feje akarsz lenni?
+
+100
+00:15:57,958 --> 00:15:59,125
+Miért ne?
+
+101
+00:16:00,250 --> 00:16:01,250
+Mert vadász vagy.
+
+102
+00:16:02,708 --> 00:16:06,333
+Meguntam, hogy idiótáknak dolgozok,
+akik előbb-utóbb megöletnek.
+
+103
+00:16:08,250 --> 00:16:09,583
+A taszkenek befogadtak.
+
+104
+00:16:10,958 --> 00:16:12,541
+A törzsük tagja lettem.
+
+105
+00:16:18,625 --> 00:16:21,250
+Készen álltam magam mögött hagyni
+a vadászatot.
+
+106
+00:16:23,500 --> 00:16:27,000
+A magunkfajta nem dönthet,
+mikor hagyja abba.
+
+107
+00:16:47,708 --> 00:16:49,250
+Hát ott van.
+
+108
+00:17:06,208 --> 00:17:07,791
+Túl sok az őr.
+
+109
+00:17:09,250 --> 00:17:12,791
+Akkor megfigyeljük az őrjárataikat,
+és csendben megyünk be.
+
+110
+00:17:22,833 --> 00:17:23,833
+Most.
+
+111
+00:18:29,041 --> 00:18:30,583
+<i>Mi volt ez?</i>
+
+112
+00:18:31,291 --> 00:18:33,500
+<i>Nem tudom.
+Patkányok?</i>
+
+113
+00:18:34,166 --> 00:18:35,250
+<i>Menj, nézd meg.</i>
+
+114
+00:18:36,375 --> 00:18:38,416
+<i>Értesítem a patkányfogót.</i>
+
+115
+00:18:46,333 --> 00:18:48,375
+<i>Nem hiszem,
+hogy patkány volt.</i>
+
+116
+00:18:48,458 --> 00:18:49,500
+<i>Hívd a bizt--</i>
+
+117
+00:19:17,791 --> 00:19:19,750
+Senki sem riadóztatott.
+
+118
+00:19:19,833 --> 00:19:21,166
+Menjünk a hangárhoz.
+
+119
+00:19:21,250 --> 00:19:22,625
+Elosonunk az őrök mellett.
+
+120
+00:19:45,750 --> 00:19:47,791
+Figyelem az ajtót.
+
+121
+00:20:07,083 --> 00:20:08,125
+Hová lettél?
+
+122
+00:20:17,916 --> 00:20:18,916
+Megvagy!
+
+123
+00:20:19,333 --> 00:20:21,458
+Tudod, hogy ki vagyok?
+
+124
+00:20:24,541 --> 00:20:25,791
+Boba Fett.
+
+125
+00:20:33,958 --> 00:20:34,958
+Izgága kis mitugrász.
+
+126
+00:20:38,166 --> 00:20:39,291
+Most már mehetünk?
+
+127
+00:20:40,041 --> 00:20:41,041
+Indulás.
+
+128
+00:21:38,291 --> 00:21:39,291
+Szép munka.
+
+129
+00:21:39,375 --> 00:21:40,458
+Te sem voltál rossz.
+
+130
+00:21:42,333 --> 00:21:43,375
+Nyomás!
+
+131
+00:21:59,715 --> 00:22:00,750
+<i>Sleemo!</i>
+
+132
+00:22:01,375 --> 00:22:02,583
+Menj.
+
+133
+00:22:02,666 --> 00:22:03,916
+Én feltartom őket.
+
+134
+00:22:06,166 --> 00:22:07,916
+Nézd meg, repül-e még!
+
+135
+00:23:11,166 --> 00:23:12,208
+Tűnjünk el innen.
+
+136
+00:23:24,166 --> 00:23:26,125
+A fenébe!
+
+137
+00:23:31,041 --> 00:23:32,500
+Mi az ördögöt csinálsz?
+
+138
+00:23:32,583 --> 00:23:35,208
+Ki kell nyitnunk a kaput,
+de nem látok semmit!
+
+139
+00:23:35,291 --> 00:23:36,666
+Egy kissé elfoglalt vagyok!
+
+140
+00:24:03,000 --> 00:24:04,541
+Beragadtak a fegyverek.
+Nem tudok lőni.
+
+141
+00:24:10,916 --> 00:24:12,333
+Megoldom.
+Zárd be a rámpát!
+
+142
+00:24:13,500 --> 00:24:15,541
+Remélem tudod, mit csinálsz.
+
+143
+00:24:54,375 --> 00:24:56,750
+Legközelebb tartjuk magunkat a tervhez.
+
+144
+00:24:57,833 --> 00:24:58,833
+Legközelebb?
+
+145
+00:25:01,208 --> 00:25:03,166
+Hogy van a hajó?
+
+146
+00:25:03,750 --> 00:25:04,750
+Jó állapotban.
+
+147
+00:25:06,166 --> 00:25:07,500
+Csak egy kicsit rozsdás.
+
+148
+00:25:09,416 --> 00:25:11,208
+Vannak jó szerelők Mos Eisley-ban.
+
+149
+00:25:12,333 --> 00:25:14,250
+Majd én rendbe hozom.
+
+150
+00:25:15,875 --> 00:25:18,333
+Előnye is van annak,
+ha halottnak hisznek.
+
+151
+00:25:20,625 --> 00:25:22,083
+A tartozásod ezzel letudva.
+
+152
+00:25:23,291 --> 00:25:24,958
+Hol rakjalak ki?
+
+153
+00:25:26,458 --> 00:25:27,458
+Merre tartasz?
+
+154
+00:25:28,833 --> 00:25:30,791
+Maradt néhány elintéznivalóm.
+
+155
+00:25:37,833 --> 00:25:38,916
+Veled tartok.
+
+156
+00:27:05,708 --> 00:27:06,708
+Kapaszkodj.
+
+157
+00:27:20,541 --> 00:27:21,750
+A sarlakk-verem.
+
+158
+00:27:22,291 --> 00:27:24,666
+Ebbe estem bele
+megannyi évvel ezelőtt.
+
+159
+00:27:25,333 --> 00:27:27,291
+Odabent lesz a páncélom is.
+
+160
+00:27:27,833 --> 00:27:28,833
+Odabent?
+
+161
+00:27:30,000 --> 00:27:31,208
+Lebomlott.
+
+162
+00:27:32,375 --> 00:27:33,708
+A beszkár ugyan nem.
+
+163
+00:27:57,500 --> 00:28:00,083
+A fenébe, semmit sem látok.
+
+164
+00:28:01,875 --> 00:28:02,916
+Óvatosan.
+
+165
+00:28:46,166 --> 00:28:47,208
+Lőj!
+
+166
+00:28:51,125 --> 00:28:52,166
+Gyerünk már!
+
+167
+00:29:38,426 --> 00:29:39,833
+Tűz!
+
+168
+00:30:12,458 --> 00:30:14,416
+Soha többé ne nyúlj
+a gombjaimhoz.
+
+169
+00:30:26,625 --> 00:30:27,625
+Semmi.
+
+170
+00:30:27,750 --> 00:30:29,291
+Csak kacatok.
+
+171
+00:30:31,500 --> 00:30:34,083
+Égsz! Nem biztonságos odabent.
+
+172
+00:30:34,166 --> 00:30:35,166
+Igen.
+
+173
+00:30:38,708 --> 00:30:39,958
+A páncélom nincs odalent.
+
+174
+00:30:40,833 --> 00:30:42,291
+Ellátta a feladatát.
+
+175
+00:30:43,083 --> 00:30:44,541
+Megóvott a savtól.
+
+176
+00:30:47,083 --> 00:30:49,208
+Inkább egy bakta-tartályra lenne szükséged.
+
+177
+00:30:58,083 --> 00:30:59,333
+<i>Scurriert?</i>
+
+178
+00:30:59,458 --> 00:31:00,666
+Köszönöm.
+
+179
+00:31:19,208 --> 00:31:21,583
+Komolyan saját házat akarsz alapítani?
+
+180
+00:31:22,166 --> 00:31:25,708
+Hányszor béreltek fel olyan munkára,
+ami elkerülhető lett volna?
+
+181
+00:31:26,603 --> 00:31:28,820
+Ha vették volna a fáradtságot,
+hogy gondolkodjanak?
+
+182
+00:31:30,291 --> 00:31:32,166
+Mennyi pénzt kereshettek volna rajta?
+
+183
+00:31:32,916 --> 00:31:35,041
+Hány életet lehetett volna megmenteni?
+
+184
+00:31:35,791 --> 00:31:37,625
+Akkor te és én munka nélkül lennénk.
+
+185
+00:31:38,916 --> 00:31:42,416
+Elegem van abból, hogy a fajtánk
+mások ostobasága miatt hal meg.
+
+186
+00:31:45,208 --> 00:31:46,541
+Okosabbak vagyunk náluk.
+
+187
+00:31:48,125 --> 00:31:49,791
+Ideje szerencsét próbálnunk.
+
+188
+00:31:51,083 --> 00:31:52,166
+Próbálnunk?
+
+189
+00:31:52,291 --> 00:31:53,333
+Igen.
+
+190
+00:31:55,166 --> 00:31:59,625
+Ha saját házat alapítok,
+erőre és észre lesz szükségem.
+
+191
+00:32:02,125 --> 00:32:03,125
+Benned mindkettő megvan.
+
+192
+00:32:04,583 --> 00:32:05,583
+Csábító.
+
+193
+00:32:07,125 --> 00:32:08,708
+De független vállalkozó vagyok.
+
+194
+00:32:09,750 --> 00:32:13,000
+Dolgozom neked,
+de többre tartom a szabadságom.
+
+195
+00:32:13,083 --> 00:32:16,583
+Valami olyat is ajánlok,
+amit egyik megbízód sem.
+
+196
+00:32:18,166 --> 00:32:19,166
+Éspedig?
+
+197
+00:32:19,791 --> 00:32:20,791
+Hűséget.
+
+198
+00:32:23,458 --> 00:32:25,625
+Részesedsz a nyereségből,
+
+199
+00:32:26,583 --> 00:32:29,083
+és az életem árán is megvédelek.
+
+200
+00:32:33,500 --> 00:32:35,750
+A taszkenekkel élés elpuhított.
+
+201
+00:32:39,750 --> 00:32:40,750
+Épp ellenkezőleg.
+
+202
+00:32:42,166 --> 00:32:43,583
+Megerősített.
+
+203
+00:32:48,041 --> 00:32:50,375
+Törzs nélkül nem boldogulhat az ember.
+
+204
+00:32:55,208 --> 00:32:56,458
+Boba!
+
+205
+00:33:36,666 --> 00:33:38,291
+<i>Gratulálok, Fett gazda!</i>
+
+206
+00:33:39,958 --> 00:33:41,708
+<i>Teljesen felépült.</i>
+
+207
+00:33:44,125 --> 00:33:46,208
+És mi lesz a belső sebhelyekkel?
+
+208
+00:33:48,500 --> 00:33:49,541
+Azoknak több idő kell.
+
+209
+00:33:51,638 --> 00:33:53,813
+Megtudtunk bármit
+a polgármester komornyikjától?
+
+210
+00:33:54,375 --> 00:33:55,458
+Együttműködik?
+
+211
+00:33:55,541 --> 00:33:57,000
+Énekel, mint egy <i>yuzzum</i>.
+
+212
+00:33:57,625 --> 00:33:59,625
+De nem, nyoma sincs a polgármesternek.
+
+213
+00:34:00,333 --> 00:34:02,458
+- A páncélomat, gyorsan.
+- Nyugalom.
+
+214
+00:34:02,541 --> 00:34:05,041
+A modok Mos Espa utcáit fésülik.
+
+215
+00:34:05,125 --> 00:34:06,916
+Ha itt van, megtalálják.
+
+216
+00:34:07,207 --> 00:34:09,225
+Attól még nem árt,
+ha látják az arcom a városban.
+
+217
+00:34:09,250 --> 00:34:10,958
+Biztos, hogy ez jó ötlet?
+
+218
+00:34:11,833 --> 00:34:13,458
+Bármikor kitörhet a háború.
+
+219
+00:34:14,000 --> 00:34:16,416
+A hatalom nem kedveli a vákuumot.
+
+220
+00:35:57,333 --> 00:35:59,500
+Azt hiszem, megértették.
+
+221
+00:36:04,958 --> 00:36:07,750
+Emlékszem a Veremben töltött éveidre.
+
+222
+00:36:09,125 --> 00:36:14,458
+Soha nem láttam még ahhoz fogható
+harci készséget. Egy legenda voltál.
+
+223
+00:36:15,583 --> 00:36:20,000
+A Krrsantan név pedig
+tömegek ezreit vonzotta.
+
+224
+00:36:20,083 --> 00:36:24,208
+Az ökleidtől jobban féltek,
+mint a sugárvetőktől.
+
+225
+00:36:24,291 --> 00:36:26,625
+Minden kihívást elfogadtál.
+
+226
+00:36:26,708 --> 00:36:28,750
+Minden trófeát elnyertél.
+
+227
+00:36:29,958 --> 00:36:33,833
+Hát nem alantas számodra,
+hogy megcsonkítsd ezt a szegény trandosánt?
+
+228
+00:36:36,958 --> 00:36:39,541
+Egykor ezrek éltettek ilyesmi láttán.
+
+229
+00:36:40,625 --> 00:36:42,416
+De azoknak a napoknak leáldozott.
+
+230
+00:36:43,791 --> 00:36:47,208
+Ezeken az emberi helyeken,
+ezekben az emberi időkben,
+
+231
+00:36:47,291 --> 00:36:51,125
+azt, mit egykor az aréna
+vérszomjaként ünnepeltek,
+
+232
+00:36:51,750 --> 00:36:55,541
+most szörnyűségnek és
+kegyetlenségnek tartják.
+
+233
+00:36:58,333 --> 00:37:00,750
+Na, látod.
+Nem jobb így?
+
+234
+00:37:00,833 --> 00:37:02,666
+Nincs már mit bizonyítanod.
+
+235
+00:37:03,166 --> 00:37:05,291
+Bajnok vagy.
+
+236
+00:37:05,958 --> 00:37:07,750
+Az ilyen csekélységek felett állsz.
+
+237
+00:37:08,291 --> 00:37:11,666
+Viszont igen sok van a számládon,
+Santo.
+
+238
+00:37:11,691 --> 00:37:13,265
+Mit szólsz,
+ha elengeded az ügyfelet,
+
+239
+00:37:13,290 --> 00:37:17,499
+és hagyod a többieket
+visszatérni a szórakozásukhoz,
+
+240
+00:37:19,416 --> 00:37:21,416
+én eltekintek a tartozásodtól.
+
+241
+00:37:57,166 --> 00:37:58,208
+Egy próbát megért.
+
+242
+00:38:01,666 --> 00:38:02,666
+Folytasd, Max.
+
+243
+00:38:12,250 --> 00:38:13,250
+Cimbora!
+
+244
+00:38:18,291 --> 00:38:20,083
+Úgy látom,
+munkát keresel.
+
+245
+00:38:33,583 --> 00:38:36,625
+Egykor Jabba, a hutt
+ült ezen a trónon.
+
+246
+00:38:37,875 --> 00:38:40,750
+Uralma tűzgolyóként ért véget
+a tatuini dűnetengerben.
+
+247
+00:38:40,833 --> 00:38:44,333
+Majd Bib Fortuna vette át a helyét.
+
+248
+00:38:46,500 --> 00:38:48,458
+Egykor mind a hutt alatt szolgáltatok.
+
+249
+00:38:49,208 --> 00:38:53,541
+Mégis gyorsan lemondtatok a családról,
+mikor Fortuna örökösnek kiáltotta ki magát.
+
+250
+00:38:54,875 --> 00:38:57,666
+Pocsék vezető volt,
+akit nem illetett meg a trón.
+
+251
+00:38:59,375 --> 00:39:01,875
+Persze, mind megpróbáltátok
+elfoglalni a helyét,
+
+252
+00:39:02,708 --> 00:39:05,708
+de meggátolt titeket
+ármányossága és árulása.
+
+253
+00:39:07,416 --> 00:39:11,125
+Ez az ember, Boba Fett, kellett hozzá,
+hogy megszabaduljon tőle.
+
+254
+00:39:11,640 --> 00:39:15,708
+Mind hatalmas vagyonra tettetek szert
+Jabba, a hutt uralkodása alatt.
+
+255
+00:39:16,833 --> 00:39:20,666
+Ez ismét így lehet,
+ha meghallgatjátok Boba Fettet.
+
+256
+00:39:30,333 --> 00:39:32,208
+Lehet, hogy én ülök a trónon,
+
+257
+00:39:33,875 --> 00:39:37,125
+de nem tartok igényt
+egyikőtök területére sem.
+
+258
+00:39:37,916 --> 00:39:41,625
+Nem kérek semmiféle áldozatot,
+de cserében én sem adok.
+
+259
+00:39:42,583 --> 00:39:45,708
+Azért vagyok itt, hogy egy kölcsönösen
+jövedelmező ajánlatot tegyek.
+
+260
+00:39:47,083 --> 00:39:48,875
+Mint azt biztosan mind tudjátok,
+
+261
+00:39:49,791 --> 00:39:52,666
+a pyke-szindikátus
+csapatokat vezényel Mos Espába.
+
+262
+00:39:53,916 --> 00:39:58,416
+Lassan, de biztosan, felszámolják a
+bolygót a fűszer-kereskedelmükkel.
+
+263
+00:39:59,583 --> 00:40:01,125
+Megvesztegették a polgármestert,
+
+264
+00:40:02,125 --> 00:40:05,041
+és megfosztják a Tatuint vagyonától.
+
+265
+00:40:05,875 --> 00:40:11,083
+Sok kreditre teszünk szert a területünkön
+folytatott fűszer-kereskedelemből.
+
+266
+00:40:11,875 --> 00:40:14,333
+Miért érdemled meg,
+hogy daimyo legyél?
+
+267
+00:40:16,000 --> 00:40:20,375
+Mi gátol meg minket abban, hogy megöljünk,
+és elvegyük, amit csak tetszik?
+
+268
+00:40:31,750 --> 00:40:33,000
+Nyugalom, fiú.
+
+269
+00:40:34,875 --> 00:40:35,875
+Nyugalom.
+
+270
+00:40:40,333 --> 00:40:41,708
+Azt hiszem, egy kicsit éhes.
+
+271
+00:40:43,166 --> 00:40:44,875
+Kérlek, foglaljatok helyet.
+
+272
+00:40:55,666 --> 00:41:00,083
+Mi értelme a konfliktusnak,
+ha az együttműködéssel meggazdagodhatunk?
+
+273
+00:41:03,000 --> 00:41:07,208
+<i>Garfalaquox gazda azt kérdezi,
+mi az, amit javasol.</i>
+
+274
+00:41:07,291 --> 00:41:10,250
+Azt javaslom,
+hogy Mos Espa családjai
+
+275
+00:41:11,333 --> 00:41:15,500
+védelmi egységet alkossanak,
+míg el nem űzzük a pyke-szindikátust.
+
+276
+00:41:16,041 --> 00:41:19,250
+Csak ezt a területet akarják.
+
+277
+00:41:19,333 --> 00:41:22,125
+Mégis miért ontanánk sajátjaink vérét,
+
+278
+00:41:22,208 --> 00:41:26,750
+egy viszályért, ami csak rád
+és a pyke-okra tartozik?
+
+279
+00:41:27,583 --> 00:41:28,875
+Valóban.
+
+280
+00:41:30,583 --> 00:41:33,208
+Akkor egyedül vívom meg a csatákat.
+
+281
+00:41:35,250 --> 00:41:38,583
+Elűzöm a betolakodókat,
+akik a bolygónkat akarják.
+
+282
+00:41:40,333 --> 00:41:42,625
+Újra biztonságossá teszem az utcákat.
+
+283
+00:41:43,666 --> 00:41:45,958
+Hogy ebből a szobából
+mindenki tovább boldogulhasson.
+
+284
+00:41:47,750 --> 00:41:51,583
+Cserébe csak annyit kérek,
+maradjatok semlegesek,
+
+285
+00:41:51,666 --> 00:41:54,750
+ha a pyke-szindikátus felkeres titeket,
+hogy áruljatok el.
+
+286
+00:42:06,833 --> 00:42:09,416
+Ez elfogadható.
+
+287
+00:42:13,125 --> 00:42:16,666
+<i>Garfalaquox gazda is elfogadhatónak tartja.</i>
+
+288
+00:42:23,083 --> 00:42:24,791
+Betartom.
+
+289
+00:42:55,041 --> 00:42:56,041
+Bízol bennük?
+
+290
+00:42:58,041 --> 00:43:00,708
+Abban bízok,
+hogy a saját érdekeiket szolgálják.
+
+291
+00:43:01,875 --> 00:43:04,750
+Az én ajánlatom sokkal jobb,
+mint a szindikátusé.
+
+292
+00:43:07,166 --> 00:43:10,791
+Lehet, hogy makacsok,
+de annyira nem ostobák,
+
+293
+00:43:10,875 --> 00:43:14,375
+hogy ne látnák be: a pyke-ok előbb,
+vagy utóbb, de elfoglalják a bolygót.
+
+294
+00:43:17,541 --> 00:43:20,750
+Így, vagy úgy,
+de háborúra kell készülnünk.
+
+295
+00:43:23,916 --> 00:43:25,916
+Mennyi tartalékunk maradt?
+
+296
+00:43:26,541 --> 00:43:28,166
+Bőven van kreditem.
+
+297
+00:43:28,791 --> 00:43:30,583
+Viszont emberhiányban vagyok.
+
+298
+00:43:30,666 --> 00:43:34,625
+Kreditekkel vehetsz embereket,
+ha tudod, hol keresd őket.
+
+299
+00:43:56,064 --> 00:43:58,978
+<font color="#4c7259">fordította: ktome
+facebook.com/ktomesubs</font>
+
