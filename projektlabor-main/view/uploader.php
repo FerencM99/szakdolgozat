@@ -136,16 +136,24 @@ include '../model/filesDB.php';
 <table style="margin-left:10%;" id="table"><thead><tr>
 
 <?php
-if ($_SESSION['userlvl']==1)
+if (session_status () == PHP_SESSION_NONE)
+{
+	session_start ();
+}
+if (isset($_SESSION['user_logged_in']) == TRUE )
+{
+
+
+if ($_SESSION['userlvl']>=1)
 {
 ?>
 	<th style="width:50px;">ID</th>
 <?php
 }
 ?>
-<th style="width:250px;">Fájl neve</th>
+<th name = "filename" style="width:250px;">Fájl neve</th>
   <th style="width:500px;">Leírás</th> 
-  <th style="width:200px;">Név</th> 
+  <th name="username" style="width:200px;">Név</th> 
   <th style="width:100px;">Kategória</th> 
 	<th style="width:50px;">Törlés</th>
   <th style="width:25px;">Letöltés</th>
@@ -160,7 +168,7 @@ if ($_SESSION['userlvl']==1)
       ?>
   <tr>
   <?php
-if ($_SESSION['userlvl']==1)
+if ($_SESSION['userlvl']>=1)
 {
 ?>
   <td><?php echo $res[$i]['ID'];?></td>
@@ -174,7 +182,12 @@ if ($_SESSION['userlvl']==1)
   <td><a href="../controller/delete_file.php?id=<?php echo $res[$i]['ID']; ?>"><img src="img/x.png" type="submit" ></a> </td>
   <td><a href="../controller/download.php?id=<?php echo $res[$i]['ID']; ?>"><img src="img/letöltés.png" type="submit" ></a> </td>
   </tr>
+
 <?php
+}
+}
+else{
+  echo 'error';
 }
 ?>
 <style>

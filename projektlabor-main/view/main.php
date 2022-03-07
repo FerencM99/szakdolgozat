@@ -7,7 +7,7 @@
 </div>
 
 
-<div >
+<div>
     <?php
     include 'sidebar.html';
     ?>

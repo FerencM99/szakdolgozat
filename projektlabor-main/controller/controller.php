@@ -1,4 +1,4 @@
-<?php
+ <?php
 require "../model/usersDB.php";
 
 if (session_status () == PHP_SESSION_NONE)
@@ -21,8 +21,7 @@ if($res[0]['code']== 200)
 	$_SESSION['user_logged_in']= TRUE;
 	$_SESSION['username'] = $username;
 	$_SESSION['userlvl'] = $asd->getLVL($username);
-
-	header('Location: ../view/main.php');
+		header('Location: ../view/main.php');
 }
 
 else 

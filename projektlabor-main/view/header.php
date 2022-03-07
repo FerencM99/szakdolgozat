@@ -2,10 +2,8 @@
 /*/
 ---
 Tesztek
----
-$_SESSION['userlvl']=2;
-/*/
-$_SESSION['userlvl']=2;
+---/*/
+
 
 
   session_start();
@@ -16,6 +14,8 @@ $_SESSION['userlvl']=2;
 if (isset($_SESSION['user_logged_in']) == FALSE ) {
   header('Location:../view/login.php');
 }
+
+
 ?>
 
 
@@ -66,6 +66,7 @@ body {
         <a href="kezeles.php">Felhasználó kezelés</a>
         <a href="log.php">log kezelése</a>
         <a href="kat.php">kategóriák kezelése</a>
+        <a style="  float: right;color:yellow;"> <?php echo "Felhaszáló bejelenkezve: ".$_SESSION["username"]."[".$_SESSION["userlvl"]."]"; ?></a>
         <?php
     }
 
@@ -73,7 +74,9 @@ body {
     <?php
     if ($_SESSION['userlvl']==1) {
         ?>
-        <a href="#kat">kategóriák kezelése</a>
+        <a href="kezeles.php">Felhasználó kezelés</a>
+        <a href="kat.php">kategóriák kezelése</a>
+        <a style="margin-left: 300px; color:yellow;"> <?php echo "Felhaszáló bejelenkezve: ".$_SESSION["username"]."[".$_SESSION["userlvl"]."]"; ?></a>
         <?php
     }
 
