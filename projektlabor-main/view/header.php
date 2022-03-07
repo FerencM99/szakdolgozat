@@ -13,6 +13,9 @@ Tesztek
 //if user is Not Logged in, redirect to login.php page.
 if (isset($_SESSION['user_logged_in']) == FALSE ) {
   header('Location:../view/login.php');
+  include '../model/categorysDB.php';
+  $udb = new usersDB; 
+  $lvl = $udb->getLVL($_SESSION["username"]);
 }
 
 

@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
     $user = $_SESSION["username"];
     $description = filter_input(INPUT_POST, 'description');
     $Owner = filter_input(INPUT_POST, 'username');
-    $cat = filter_input(INPUT_POST, 'CatName');
+    $cat = filter_input(INPUT_POST, 'category');
     $path = "../uploads/".$tname;
     $fdb->uploadfile($pname, $description, $user, $cat);
     move_uploaded_file($pname,$path);

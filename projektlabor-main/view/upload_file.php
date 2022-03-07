@@ -8,6 +8,9 @@
 <div style="margin-top: 0px;">
     <?php
  include '../view/header.php';
+ include '../model/categorysDB.php';
+ $categorysDB = new categorysDB;
+ $res =$categorysDB->listall();
     ?>
 </div>
 <style>
@@ -103,6 +106,8 @@ form .content .checkbox{
 
 </head>
 <body>
+
+
 <div class="csomag">
       <div class="title">
 Bejelentkezés</div>
@@ -112,10 +117,15 @@ Bejelentkezés</div>
         </div>
         <div class="field">
             <label>Kategória</label><br>
-            <select class="select" name="category" id="category">
-                <option value="def" disabled selected>Válassz kategóriát</option>
-                <option>default</option>
+            <select name="category">
+            <?php
+            for($i = 0; $i<count($res); $i++)
+              {
+                echo "<option>".$res[$i]['CatName']."</option>";
+              }
+              ?>
             </select>
+
         </div>
         <div class="field">
             <label>File Feltötlése</label><br>
