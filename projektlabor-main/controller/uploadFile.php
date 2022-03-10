@@ -14,16 +14,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
  {
     $user = $_SESSION["username"];
     $description = filter_input(INPUT_POST, 'description');
-    $Owner = filter_input(INPUT_POST, 'username');
     $cat = filter_input(INPUT_POST, 'category');
-    $path = "../uploads/".$tname;
+    $path = "../uploads/".$pname;
+    move_uploaded_file($tname,$path);
     $fdb->uploadfile($pname, $description, $user, $cat);
-    move_uploaded_file($pname,$path);
-    ?>
-    <script>
-      alert("Fájl sikeresen feltöltve!");
-    </script> 
-    <?php
       header('Location:../view/main.php');
 }
  else{

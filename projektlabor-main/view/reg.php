@@ -3,7 +3,7 @@
 <meta charset="utf-8">
 <link rel="stylesheet" href="css/reg.css">
 
-<div style="margin-top: -10px; margin-left: -10px;">
+<div style="margin-top: -10px;">
     <?php
    include 'header.php';
     ?>

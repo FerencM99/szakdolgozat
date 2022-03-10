@@ -6,7 +6,6 @@
 <link rel="stylesheet">
 <?php
 include '../model/filesDB.php';
-
 ?>
 <style>
 
@@ -142,51 +141,50 @@ if (session_status () == PHP_SESSION_NONE)
 }
 if (isset($_SESSION['user_logged_in']) == TRUE )
 {
+    if ($_SESSION['userlvl']>=1)
+    {
+    ?>
+    	<th style="width:50px;">ID</th>
+    <?php
+    }
+    ?>
+      <th style="width:250px;">Fájl neve</th>
+      <th style="width:500px;">Leírás</th> 
+      <th style="width:200px;">Név</th> 
+      <th style="width:100px;">Kategória</th> 
+    	<th style="width:50px;">Törlés</th>
+      <th style="width:25px;">Letöltés</th>
+        </thead>
+        <tbody>
+          <?php
+          $fileDB = new filesDB();
+          $res = $fileDB->listallfiles();
 
-
-if ($_SESSION['userlvl']>=1)
-{
-?>
-	<th style="width:50px;">ID</th>
-<?php
-}
-?>
-<th name = "filename" style="width:250px;">Fájl neve</th>
-  <th style="width:500px;">Leírás</th> 
-  <th name="username" style="width:200px;">Név</th> 
-  <th style="width:100px;">Kategória</th> 
-	<th style="width:50px;">Törlés</th>
-  <th style="width:25px;">Letöltés</th>
-    </thead>
-    <tbody>
+          for($i = 0; $i<count($res); $i++)
+          {
+          ?>
+      <tr>
       <?php
-      $fileDB = new filesDB();
-      $res = $fileDB->listallfiles();
+    if ($_SESSION['userlvl']>=1)
+    {
+    ?>
+      <td><?php echo $res[$i]['ID'];?></td>
+    <?php
+    }
+    ?>
+    	<td><?php echo $res[$i]['Filename'];?></td>
+      <td><?php echo $res[$i]['Link'];?></td>
+      <td><?php echo $res[$i]['Username'];?></td>
+      <td><?php echo $res[$i]['CatName'];?></td>
+      <td><a href="../controller/delete_file.php?id=<?php echo $res[$i]['ID']; ?>"><img src="img/x.png" type="submit" ></a> </td>
+      <td><a href="../controller/download.php?id=<?php echo $res[$i]['ID']; ?>"><img src="img/letöltés.png" type="submit" ></a> </td>
+      </tr>
 
-      for($i = 0; $i<count($res); $i++)
-      {
-      ?>
-  <tr>
-  <?php
-if ($_SESSION['userlvl']>=1)
+    <?php
+    }
+}
+else
 {
-?>
-  <td><?php echo $res[$i]['ID'];?></td>
-<?php
-}
-?>
-	<td><?php echo $res[$i]['Filename'];?></td>
-  <td><?php echo $res[$i]['Link'];?></td>
-  <td><?php echo $res[$i]['Username'];?></td>
-  <td><?php echo $res[$i]['CatName'];?></td>
-  <td><a href="../controller/delete_file.php?id=<?php echo $res[$i]['ID']; ?>"><img src="img/x.png" type="submit" ></a> </td>
-  <td><a href="../controller/download.php?id=<?php echo $res[$i]['ID']; ?>"><img src="img/letöltés.png" type="submit" ></a> </td>
-  </tr>
-
-<?php
-}
-}
-else{
   echo 'error';
 }
 ?>

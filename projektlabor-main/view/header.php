@@ -13,10 +13,11 @@ Tesztek
 //if user is Not Logged in, redirect to login.php page.
 if (isset($_SESSION['user_logged_in']) == FALSE ) {
   header('Location:../view/login.php');
-  include '../model/categorysDB.php';
-  $udb = new usersDB; 
-  $lvl = $udb->getLVL($_SESSION["username"]);
 }
+//else{
+//  require "../model/categorysDB.php";
+//  $udb = new categorysDB();  
+//}
 
 
 ?>
@@ -49,7 +50,7 @@ body {
 
 .topnav a:hover {
   background-color: #401b58;
-  color: black;
+  color: white;
 }
 
 .topnav a.active {
@@ -61,7 +62,7 @@ body {
 <body>
 
 <div class="topnav">
-    <a class="active" href="main.php">Főoldal</a>
+  <a class="active" href="main.php">Főoldal</a>
     <?php
     if ($_SESSION['userlvl']==0) {
         ?>

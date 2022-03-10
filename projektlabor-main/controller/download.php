@@ -1,5 +1,8 @@
 <?php
-if(!empty($_GET['file'])){
+    include '../model/filesDB.php';
+    $fdb = new filesDB();
+    $files = $fdb->listallfiles();
+
     $fileName  = basename($_GET['file']);
     $filePath  = "../uploads/".$fileName;
     
@@ -19,11 +22,5 @@ if(!empty($_GET['file'])){
     else{
         echo "file not exit";
     }
-}
-else
-{
-    echo "rossz irány!";
-    
-}
 
 ?>
