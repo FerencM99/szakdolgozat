@@ -14,21 +14,16 @@ class filesDB extends db
         $this->log($ID." fájl törölve lett");
     }
     function editfile($ID, $CatName=null, $description=null) {
-        $data = $this->select("SELECT * FROM `files` WHERE `ID` = '".$ID."';");
-        $code = "UPDATE `files` SET ";
-        if ($CatName !=null and $description !=null) {
-            $code = $code."CatName = '".$CatName."', ";
+        $data = $this->select("SELECT * FROM `files` WHERE `ID` = '".$ID."' ;");
+        if ($CatName == null) {
+            $CatName = $data[0]['CatName'];
         }
-        else if ($CatName !=null){
-            $code = $code."`CatName`='".$CatName."'";
+        if ($description == null ) {
+            $description = $data[0]['Link'];
         }
-        if($description !=null){
-            $code = $code." Link = '".$description."'";
-        }
-        $code = $code." WHERE `ID`='".$ID."';";
-        $this->select($code);
-        $this->log('File modosításra került ('.$ID.' | '.$CatName.' | '.$description.')');
-        
+        $this->select("UPDATE `files` SET `CatName`='".$CatName."',`Link`='".$description."' WHERE `ID` = '".$ID."' ;");
+        $this->log($ID."-es fájl modosításra került");
+
     }
     function getfiledata($ID) {
         $result = $this->select("SELECT * FROM `files` WHERE `ID` = '".$ID."' ;");
