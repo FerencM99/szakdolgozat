@@ -5,6 +5,10 @@
 
 <div style="margin-top: -10px;">
     <?php
+    if (session_status () == PHP_SESSION_NONE)
+    {
+        session_start ();
+    }
    include 'header.php';
     ?>
 </div>
@@ -23,8 +27,8 @@ Regisztráció</div>
         </div>
 
 <div name="userlvl" class="field">
-    <select class="select" name="userlvl" id="userlvl">
-        <option value="def" disabled selected>Felhasználó szintje</option>
+    <select class="select" name="Userlvl" id="Userlvl">
+        <option disabled selected>Felhasználó szintje</option>
         <option value="2">Admin</option>
         <option value="1">Oktató</option>
         <option value="0">Hallgató</option>

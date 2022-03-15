@@ -6,9 +6,10 @@ Tesztek
 
 
 
-  session_start();
-
-//If User is logged in the session['user_logged_in'] will be set to true
+if (session_status () == PHP_SESSION_NONE)
+{
+	session_start ();
+}//If User is logged in the session['user_logged_in'] will be set to true
 
 //if user is Not Logged in, redirect to login.php page.
 if (isset($_SESSION['user_logged_in']) == FALSE ) {
@@ -16,8 +17,9 @@ if (isset($_SESSION['user_logged_in']) == FALSE ) {
 }
 //else{
 //  require "../model/categorysDB.php";
-//  $udb = new categorysDB();  
-//}
+//  $cdb = new categorysDB();  
+//  $res =$cdb->listall();
+
 
 
 ?>
@@ -60,7 +62,6 @@ body {
 </style>
 </head>
 <body>
-
 <div class="topnav">
   <a class="active" href="main.php">Főoldal</a>
     <?php
@@ -80,7 +81,7 @@ body {
         ?>
         <a href="kezeles.php">Felhasználó kezelés</a>
         <a href="kat.php">kategóriák kezelése</a>
-        <a style="margin-left: 300px; color:yellow;"> <?php echo "Felhaszáló bejelenkezve: ".$_SESSION["username"]."[".$_SESSION["userlvl"]."]"; ?></a>
+        <a style="float: right; color:yellow;"> <?php echo "Felhaszáló bejelenkezve: ".$_SESSION["username"]."[".$_SESSION["userlvl"]."]"; ?></a>
         <?php
     }
 

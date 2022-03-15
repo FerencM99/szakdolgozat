@@ -7,6 +7,10 @@
 
 <div style="margin-top: 0px;">
     <?php
+    if (session_status () == PHP_SESSION_NONE)
+    {
+      session_start ();
+    }
  include '../view/header.php';
  include '../model/categorysDB.php';
  $categorysDB = new categorysDB;

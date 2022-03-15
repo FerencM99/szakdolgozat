@@ -9,7 +9,7 @@
 
 <div>
     <?php
-    include 'sidebar.html';
+    include 'sidebar.php';
     ?>
 </div>
 

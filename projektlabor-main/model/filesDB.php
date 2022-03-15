@@ -13,29 +13,26 @@ class filesDB extends db
         $this->select("DELETE FROM `files` WHERE `files`.`ID` = ".$ID.";");
         $this->log($ID." fájl törölve lett");
     }
-    function editfile($ID, $filename=null, $link=null, $ownerID=null, $categoryID=null, $public=null) {
-        $data = $this->select("SELECT * FROM `files` WHERE `ID` = ".$ID.";");
-        if ($filename == null) {
-            $filename = $data[0]['Filename'];
+    function editfile($ID, $CatName=null, $description=null) {
+        $data = $this->select("SELECT * FROM `files` WHERE `ID` = '".$ID."';");
+        $code = "UPDATE `files` SET ";
+        if ($CatName !=null and $description !=null) {
+            $code = $code."CatName = '".$CatName."', ";
         }
-        if ($link == null ) {
-            $link = $data[0]['Link'];
+        else if ($CatName !=null){
+            $code = $code."`CatName`='".$CatName."'";
         }
-        if ($ownerID == null) {
-            $ownerID = $data[0]['OwnerID'];
+        if($description !=null){
+            $code = $code." Link = '".$description."'";
         }
-        if ($categoryID == null) {
-            $categoryID = $data[0]['CategoryID'];
-        }
-        if ($public == null) {
-            $public = $data[0]['Public'];
-        }
-        $this->select("UPDATE `files` SET `Filename`='".$filename."',`Link`='".$link."',`OwnerID`=".$ownerID.",`CategoryID`=".$categoryID.",`Public`=".$public." WHERE `ID`=".$ID.";");
-        $this->log($ID."-es fájl modosításra került");
-
+        $code = $code." WHERE `ID`='".$ID."';";
+        $this->select($code);
+        $this->log('File modosításra került ('.$ID.' | '.$CatName.' | '.$description.')');
+        
     }
     function getfiledata($ID) {
-        $this->select("SELECT *  FROM `files` WHERE `files`.`ID` = ".$ID.";");
+        $result = $this->select("SELECT * FROM `files` WHERE `ID` = '".$ID."' ;");
+        return $result;
     }
     function listallfiles() {
         $result = $this->select("SELECT * FROM `files`;");

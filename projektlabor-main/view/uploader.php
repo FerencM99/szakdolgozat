@@ -1,12 +1,18 @@
+<?php
+if (session_status () == PHP_SESSION_NONE)
+{
+	session_start ();
+}
+include '../model/filesDB.php';
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
 
 <meta charset="UTF-8">
 <link rel="stylesheet">
-<?php
-include '../model/filesDB.php';
-?>
+
 <style>
 
 .button{
@@ -116,12 +122,6 @@ include '../model/filesDB.php';
     <span class="checkmark"></span>
 
     <label style="margin-left:13px;" for="cars">Kategória:</label>
-  <select>
-    <option value="0">Gazdasági</option>
-    <option value="1">Informatikai</option>
-    <option value="2">Mérnöki</option>
-    <option value="2">Default</option>
-  </select><br>
 
   <br><input type="file" name="file" id="actual-btn" hidden/>
   <label id="lbl" for="actual-btn" >Válassz fájlt</label>
@@ -135,13 +135,10 @@ include '../model/filesDB.php';
 <table style="margin-left:10%;" id="table"><thead><tr>
 
 <?php
-if (session_status () == PHP_SESSION_NONE)
-{
-	session_start ();
-}
+
 if (isset($_SESSION['user_logged_in']) == TRUE )
 {
-    if ($_SESSION['userlvl']>=1)
+    if ($_SESSION['userlvl']>=0)
     {
     ?>
     	<th style="width:50px;">ID</th>
@@ -151,21 +148,21 @@ if (isset($_SESSION['user_logged_in']) == TRUE )
       <th style="width:250px;">Fájl neve</th>
       <th style="width:500px;">Leírás</th> 
       <th style="width:200px;">Név</th> 
-      <th style="width:100px;">Kategória</th> 
+      <th style="width:100px;">Kategória</th>
     	<th style="width:50px;">Törlés</th>
+      <th style="width:25px;">Módosítás</th>
       <th style="width:25px;">Letöltés</th>
         </thead>
         <tbody>
           <?php
           $fileDB = new filesDB();
           $res = $fileDB->listallfiles();
-
           for($i = 0; $i<count($res); $i++)
           {
           ?>
       <tr>
       <?php
-    if ($_SESSION['userlvl']>=1)
+    if ($_SESSION['userlvl']>=0)
     {
     ?>
       <td><?php echo $res[$i]['ID'];?></td>
@@ -177,7 +174,9 @@ if (isset($_SESSION['user_logged_in']) == TRUE )
       <td><?php echo $res[$i]['Username'];?></td>
       <td><?php echo $res[$i]['CatName'];?></td>
       <td><a href="../controller/delete_file.php?id=<?php echo $res[$i]['ID']; ?>"><img src="img/x.png" type="submit" ></a> </td>
+      <td><a href="editFile.php?id=<?php echo $res[$i]['ID']; ?>" style="right=550px ;"><img src="img/szerk3.png" type="submit"></a></td>
       <td><a href="../controller/download.php?id=<?php echo $res[$i]['ID']; ?>"><img src="img/letöltés.png" type="submit" ></a> </td>
+
       </tr>
 
     <?php

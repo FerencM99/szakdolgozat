@@ -28,7 +28,7 @@
                         <input name="neptun" id="neptun" type="text" value=<?php echo $data[0]['Username']; ?>>
                     </div>
                     <div class="field">
-                        <input name="pw" id="pw" type="text" value=<?php echo $data[0]['Password']; ?>>
+                        <input name="pw" id="pw" type="hidden" value=<?php echo $data[0]['Password']; ?>>
                     </div>
 
                 <div class="field">
