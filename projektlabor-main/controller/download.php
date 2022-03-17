@@ -3,6 +3,7 @@ if (session_status () == PHP_SESSION_NONE)
 {
 	session_start ();
 }
+    include '../model/db.php';
     include '../model/filesDB.php';
     $fdb = new filesDB();
     $files = $fdb->listallfiles();

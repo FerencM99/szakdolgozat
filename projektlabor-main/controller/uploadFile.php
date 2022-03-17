@@ -3,6 +3,7 @@ if (session_status () == PHP_SESSION_NONE)
 {
 	session_start ();
 }
+require "../model/db.php";
 require "../model/filesDB.php";
  $fdb = new filesDB();
 

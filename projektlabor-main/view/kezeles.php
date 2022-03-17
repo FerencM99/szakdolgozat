@@ -6,7 +6,7 @@
 <div style="margin-top: 0px;">
     <?php
    include 'header.php';
-   include '../model/usersDB.php';
+
     ?>
 </div>
 
@@ -63,6 +63,7 @@
   </thead>
     <tbody>
     <?php
+      $fdb = new filesDB();
       $udb = new usersDB();
       $all = $udb->listall();
 

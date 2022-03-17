@@ -12,13 +12,20 @@
       session_start ();
     }
  include '../view/header.php';
- include '../model/filesDB.php';
- $id=$_GET["id"];
+ include '../model/categorysDB.php';
 
+
+ $id=$_GET["id"];
+ $cdb = new categorysDB();
  $fdb = new filesDB();
+
+ $kat = $cdb->listall(); 
+
+
 
  $res =$fdb->listallfiles();
  $data = $fdb->getfiledata($id)
+
     ?>
 </div>
 <style>
@@ -129,12 +136,16 @@ Fájl módosítása</div>
             <label>Kategória</label><br>
             <select id="kat" name="kat">
             <?php
-            for($i = 0; $i<count($res); $i++)
-              {  
+            for($i = 0; $i<count($kat); $i++)
+              {
                 ?>
-                <option value="<?php echo $res[$i]['CatName'];?>" <?php if($data[0]['CatName'] == $res[$i]['CatName']) {echo "selected";} ?>><?php echo $res[$i]['CatName'];?></option>
+                <option <?php if($kat[$i]['CatName'] == $data[0]['CatName']) {echo "selected";} ?>><?php echo $kat[$i]['CatName']?></option>
                 <?php
-
+                /*if($res[$i]['CatName'] == $data[0]['CatName']){
+                  echo "<option selected>".$res[$i]['CatName']."</option>";
+                }else{
+                  echo "<option>".$res[$i]['CatName']."</option>";
+                }*/
               }
               ?>
             </select>

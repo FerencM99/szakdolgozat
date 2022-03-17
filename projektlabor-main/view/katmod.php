@@ -6,6 +6,7 @@
 <div style="margin-top: -10px; margin-left: -10px;">
     <?php
    include 'header.php';
+   include '../model/filesDB.php';
    include '../model/categorysDB.php';
 
     ?>

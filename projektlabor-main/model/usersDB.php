@@ -1,5 +1,4 @@
 <?php
-require "db.php";
 
 class usersDB extends db
 {
@@ -11,6 +10,7 @@ class usersDB extends db
         if (count($asd) == 1) {
             $result = $asd[0]['Userlvl'];
         }
+        return $result;
     }
 
     function getuserdata($id) {

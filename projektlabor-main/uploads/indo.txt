@@ -1,0 +1,8 @@
+1 - 2.heti feladat(másolás)
+gyakorlas - 3. heti feladat(azonosítás)
+try - 4.hét(számológép, kamera, galéria)
+het5 - 5. heti feladat(switch,csúszka, dátum, csillag értékelés)
+gyumolcskosar-6. heti feladat
+3 és 5-el osztható számok - 8. heti feladat
+szenzor tulajdonság kiirása, gyorsulésmérő szenzor van e? - sensor_het9
+adatmentes app kikapcsoláskor, számolja mennyiszer indult újra, elmenti a neved - adatm_het10

@@ -1,4 +1,5 @@
 <?php
+include '../model/db.php';
 require "../model/usersDB.php";
 
 

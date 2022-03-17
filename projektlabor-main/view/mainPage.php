@@ -9,8 +9,12 @@ if (isset($_SESSION['user_logged_in']) == FALSE ) {
   header('Location:../view/login.php');
 }
 else{
-  require "../model/categorysDB.php";
-  $cdb = new categorysDB();  
+  include '../model/filesDB.php';
+  include '../model/categorysDB.php';
+   $cdb = new categorysDB(); 
+   $fdb = new filesDB();
+
+  $files =$fdb->listallfiles();
   $res =$cdb->listall();
 }
 
@@ -114,11 +118,10 @@ td {
   <?php          
             for($i = 0; $i<count($res); $i++)
               { 
-               // if($name == $cdb[$i]['CatName'])
-                //{
+                if($files[$i]['CatName'] == $res[$i]['CatName'])
+                {
                   ?><tr> <td> <a href="main.php"><?php echo "<option>".$res[$i]['CatName']."</option>";?></a></td></tr><?php
-                //}
-               // $result = $cdb->select("SELECT * FROM `categorys` WHERE `CatName` = '".$name."' ;");
+                }
               }
         ?> 
 </table>

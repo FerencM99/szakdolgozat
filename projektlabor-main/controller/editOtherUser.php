@@ -1,4 +1,5 @@
 <?php
+require '../model/db.php';
 require '../model/usersDB.php';
 
 $eur = new usersDB();

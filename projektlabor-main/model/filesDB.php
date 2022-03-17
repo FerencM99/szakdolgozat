@@ -1,5 +1,4 @@
 <?php
-require "db.php";
 
 
 class filesDB extends db
@@ -12,6 +11,23 @@ class filesDB extends db
     function deletefile($ID) {
         $this->select("DELETE FROM `files` WHERE `files`.`ID` = ".$ID.";");
         $this->log($ID." fájl törölve lett");
+    }
+    function editF($id,$CatName=null,$description=null) {
+        $this->log('Felhasználó modosításra került ('.$id.' | '.$CatName.' | '.$description.')');
+
+        $code = "UPDATE `files` SET";
+
+        if ($CatName != null and $description != null) {
+            $code = $code."`CatName`='".$CatName."',";
+        }else if ($CatName != null) {
+                $code = $code."`CatName`='".$CatName."'";
+            }
+        if ($description != null) {
+            $code = $code."`Link`='".$description."'";
+        }
+              
+        $code = $code." WHERE `ID`='".$id."';";
+        $this->select($code);
     }
     function editfile($ID, $CatName=null, $description=null) {
         $data = $this->select("SELECT * FROM `files` WHERE `ID` = '".$ID."' ;");

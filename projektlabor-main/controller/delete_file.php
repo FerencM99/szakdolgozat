@@ -1,5 +1,5 @@
 <?php
-
+include '../model/db.php';
 require "../model/filesDB.php";
 
 

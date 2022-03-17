@@ -3,8 +3,12 @@ if (session_status () == PHP_SESSION_NONE)
 {
 	session_start ();
 }
-include '../model/filesDB.php';
 
+$fileDB = new filesDB();
+$res = $fileDB->listallfiles();
+
+$userDB = new usersDB();
+$user = $userDB->listall();
 ?>
 <!DOCTYPE html>
 <html>
@@ -102,6 +106,8 @@ include '../model/filesDB.php';
 }
 }
 </style>
+
+
 </head>
 <body>
 <div>
@@ -138,7 +144,7 @@ include '../model/filesDB.php';
 
 if (isset($_SESSION['user_logged_in']) == TRUE )
 {
-    if ($_SESSION['userlvl']>=0)
+    if ($userDB->getLVL($_SESSION["username"])>=1)
     {
     ?>
     	<th style="width:50px;">ID</th>
@@ -155,14 +161,12 @@ if (isset($_SESSION['user_logged_in']) == TRUE )
         </thead>
         <tbody>
           <?php
-          $fileDB = new filesDB();
-          $res = $fileDB->listallfiles();
           for($i = 0; $i<count($res); $i++)
           {
           ?>
       <tr>
       <?php
-    if ($_SESSION['userlvl']>=0)
+    if ($userDB->getLVL($_SESSION["username"])>=1)
     {
     ?>
       <td><?php echo $res[$i]['ID'];?></td>
@@ -205,6 +209,7 @@ else
 	border:2px solid black;
     margin-top: 50px;
   background-color: white;
+  margin-bottom: 200px;
 }
 td {
     border:2px solid black;

@@ -1,0 +1,65 @@
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/reg.css">
+
+<div style="margin-top: -10px; margin-left: -10px;">
+    <?php
+   include 'header.php';
+   include '../model/usersDB';
+    ?>
+</div>
+    <?php
+        $id=$_GET["id"];
+        $asd = new usersDB();
+        $res= $asd->getuserdata($id);
+
+    ?>
+
+        <div class="row-fluid">
+            <div class="box">
+                <div class="title" style="text-size=20px">
+                 Módosítás</div>
+                <form name="form1" action="" method="post" class="form-horizontal">
+                    <div class="field">
+                        <input name="neptun" type="text" required placeholder="Neptun kód" value="<?php echo $neptun[0]["Username"];?>"/>
+                    </div>
+                <div class="field">
+                <input name="pw" type="text" required placeholder="Jelszó" value="<?php echo $pw[0]['Password'];?>"/>
+             </div>
+
+                <div class="field">
+                    <select class="select" name="userlvl" id="ulvl">
+                        <option value="def" disabled selected>Felhasználó szintje</option>
+                        <option value="2" <?php if($userlvl == 2) {echo "selected";} ?>>Admin</option>
+                        <option value="1" <?php if($userlvl == 1) {echo "selected";} ?>>Oktató</option>
+                        <option value="0" <?php if($userlvl == 0) {echo "selected";} ?>>Hallgató</option>
+                    </select>
+                </div>
+        <div class="form-actions">
+        <button type="submit" name="submit1" class="btn btn-succes">Mentés</button>
+        </div>
+    </form>
+        </div>
+
+        </div>
+    </div>
+    <?php
+    if(isset($_POST["submit1"]))
+    {
+        mysqli_query($link,"UPDATE `users` SET Username='$_POST[neptun]', Password='$_POST[pw]', Userlvl='$_POST[userlvl]' WHERE id=$id") or die(mysqli_error($link));
+    ?>
+        <script>
+                setTimeout(function(){
+                    window.location="kezeles.php";
+                    alert("Sikeres módosítás");
+                }, 1000);        
+           
+        </script>
+               
+
+    <?php
+    }
+?>
+    
+<?php
+    include 'footer.php';
+?>

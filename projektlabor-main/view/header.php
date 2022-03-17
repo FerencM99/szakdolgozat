@@ -15,12 +15,15 @@ if (session_status () == PHP_SESSION_NONE)
 if (isset($_SESSION['user_logged_in']) == FALSE ) {
   header('Location:../view/login.php');
 }
-//else{
 //  require "../model/categorysDB.php";
 //  $cdb = new categorysDB();  
 //  $res =$cdb->listall();
+require "../model/db.php";
+include '../model/filesDB.php';
+include "../model/usersDB.php";
 
-
+$udb = new usersDB();
+$userLVL = $udb->getLVL($_SESSION["username"]);
 
 ?>
 
@@ -64,24 +67,22 @@ body {
 <body>
 <div class="topnav">
   <a class="active" href="main.php">Főoldal</a>
+  <a style="  float: right;color:yellow;"> <?php echo "Felhaszáló bejelenkezve: ".$_SESSION["username"]."[".$userLVL."]"; ?></a>
     <?php
-    if ($_SESSION['userlvl']==0) {
+    if ($userLVL==1) {
         ?>
-        <a href="reg.php">felhasználó létrehozás</a>
-        <a href="kezeles.php">Felhasználó kezelés</a>
-        <a href="log.php">log kezelése</a>
         <a href="kat.php">kategóriák kezelése</a>
-        <a style="  float: right;color:yellow;"> <?php echo "Felhaszáló bejelenkezve: ".$_SESSION["username"]."[".$_SESSION["userlvl"]."]"; ?></a>
         <?php
     }
 
     ?>
     <?php
-    if ($_SESSION['userlvl']==1) {
+    if ($userLVL>=2) {
         ?>
         <a href="kezeles.php">Felhasználó kezelés</a>
+        <a href="reg.php">felhasználó létrehozás</a>
+        <a href="log.php">log kezelése</a>
         <a href="kat.php">kategóriák kezelése</a>
-        <a style="float: right; color:yellow;"> <?php echo "Felhaszáló bejelenkezve: ".$_SESSION["username"]."[".$_SESSION["userlvl"]."]"; ?></a>
         <?php
     }
 

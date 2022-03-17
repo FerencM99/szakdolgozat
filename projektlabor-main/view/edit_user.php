@@ -4,7 +4,6 @@
 <div style="margin-top: -10px; margin-left: -10px;">
     <?php
    include 'header.php';
-   include '../model/usersDB.php';
     ?>
 </div>
     <?php

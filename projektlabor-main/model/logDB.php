@@ -1,5 +1,4 @@
 <?php
-require "db.php";
 
 class logDB extends db
 {
