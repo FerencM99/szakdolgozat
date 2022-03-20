@@ -2,13 +2,14 @@
 <head>
 <meta charset="utf-8">
 <link rel="stylesheet" href="css/reg.css">
-
-<div style="margin-top: -10px;">
-    <?php
+<?php
     if (session_status () == PHP_SESSION_NONE)
     {
         session_start ();
     }
+?>
+<div style="margin: -10px;">
+   <?php
    include 'header.php';
     ?>
 </div>

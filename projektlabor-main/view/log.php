@@ -1,6 +1,6 @@
 <html>
 
-<div style="margin-top: 0px;">
+<div style="margin: 0; padding-bottom:80px;">
     <?php
    include 'header.php';
     ?>
@@ -17,7 +17,6 @@ include_once('../controller/log.php');
 #table {
 	width:70%;
 	border:2px solid black;
-    margin-top: 50px;
   background-color: white;
     margin-bottom: 200px;
 }

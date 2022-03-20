@@ -15,9 +15,6 @@ if (session_status () == PHP_SESSION_NONE)
 if (isset($_SESSION['user_logged_in']) == FALSE ) {
   header('Location:../view/login.php');
 }
-//  require "../model/categorysDB.php";
-//  $cdb = new categorysDB();  
-//  $res =$cdb->listall();
 require "../model/db.php";
 include '../model/filesDB.php';
 include "../model/usersDB.php";
@@ -35,11 +32,13 @@ $userLVL = $udb->getLVL($_SESSION["username"]);
 <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
 <style>
 body {
-  margin: 0;
+  margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .topnav {
+  width: 100%;
+  position: fixed;
   overflow: hidden;
   background-color: #401b58;
 }
@@ -77,7 +76,7 @@ body {
 
     ?>
     <?php
-    if ($userLVL>=2) {
+    if ($userLVL==2) {
         ?>
         <a href="kezeles.php">Felhasználó kezelés</a>
         <a href="reg.php">felhasználó létrehozás</a>

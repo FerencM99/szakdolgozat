@@ -5,26 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<div style="margin-top: 0px;">
+<div style="margin-top: 0; padding-bottom: 50px;">
     <?php
    include 'header.php';
    include '../model/categorysDB.php';
+
+   $userDB = new usersDB();
+   $user = $userDB->listall();
     ?>
 </div>
 <style>
 
-.button{
-	color: white;
-	margin-top: 0px;
-    border-radius: 30px 30px 30px 30px;
-	width: 180px;
-	background-color: #401b58;
-  	padding: 14px 25px;
-  	text-align: center;
-  	text-decoration: none;
-  	display: inline-block;
 
-}
 .open-button {
   background-color: #401b58;
   color: white;
@@ -86,8 +78,8 @@
 <!-- Hozzáadás PopUp -->
 
 <div>
-	<p align="right">
-		<input type="submit"	style="width: 210px; right: 500px;" class="open-button"  onclick="openForm()" value="új elem hozzáadása">
+	<p style="align= right;">
+		<input type="submit"	style="width: 210px; float: right; margin-bottom: 10px;" class="open-button"  onclick="openForm()" value="új elem hozzáadása">
 	</p>
 
 	<div class="form-popup" id="myForm">
@@ -107,7 +99,14 @@
 
 
 <table id="table"><thead><tr>
-	<th style="width: 50px;">ID</th>
+    <?php
+    if ($userDB->getLVL($_SESSION["username"])>1)
+    {
+    ?>
+	    <th style="width: 50px;">ID</th>
+    <?php
+    }
+    ?>
 	<th style="width: 200px;">Kategória neve</th>
   <th style="width: 250px;">Leírása</th> 
 	<th style="width: 50px;">Törlés</th>
@@ -119,11 +118,20 @@
       $cat = new categorysDB();
       $res = $cat->listall();
 
+
+
       for($i = 0; $i<count($res); $i++)
       {
         ?>
     <tr>
-    <td><?php echo $res[$i]['ID'];?></td>
+    <?php
+    if ($userDB->getLVL($_SESSION["username"])>1)
+    {
+    ?>
+      <td><?php echo $res[$i]['ID'];?></td>
+    <?php
+    }
+    ?>
 	  <td><?php echo $res[$i]['CatName'];?></td>
     <td><?php echo $res[$i]['Description'];?></td>
     <td><a href="../controller/delete_cat.php?id=<?php echo $res[$i]['ID']; ?>"><img src="img/x.png" type="submit" ></a> </td>
@@ -134,10 +142,9 @@
          
 <style>
 button {
-    background-color:#401b58;
+  background-color:#401b58;
   border: none;
   color: white;
-  padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -147,8 +154,8 @@ button {
 #table {
 	width:90%;
 	border:2px solid black;
-    margin-top: 50px;
-    margin-left: 5%;
+  margin:0px;
+  margin-left: 5%;
   background-color: white;
 }
 td {

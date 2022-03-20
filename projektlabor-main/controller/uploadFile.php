@@ -15,6 +15,17 @@ require "../model/filesDB.php";
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') 
  {
+   // Check file size
+   $Size = $_FILES["file"]["size"];
+    if ( $Size > 10000000) {
+      header('Location:../view/upload_file.php');
+    ?>
+    <script>
+    alert("Fájl feltöltése sikertelen!");
+    </script> 
+    <?php
+    }
+    else{
     $user = $_SESSION["username"];
     $description = filter_input(INPUT_POST, 'description');
     $cat = filter_input(INPUT_POST, 'category');
@@ -22,6 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
     move_uploaded_file($tname,$path);
     $fdb->uploadfile($pname, $description, $user, $cat);
       header('Location:../view/main.php');
+    }
 }
  else{
 ?>
@@ -29,7 +41,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
     alert("Fájl feltöltése sikertelen!");
   </script> 
   <?php
-header('Location:../view/upload_file.php');
   }
  
 

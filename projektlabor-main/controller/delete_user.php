@@ -7,19 +7,18 @@ if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 
-$data=$_GET['id'];
+$id=$_GET['id'];
 
+$udb = new usersDB();
 
-$asd = new usersDB();
-
-if(empty($data))
+if(empty($id))
 {
     header('Location: ' . $_SERVER['HTTP_REFERER']);
 }
 else
 {
 
-    $asd ->delete_user($data);
+    $udb ->delete_user($id);
 
     header('Location: ' . $_SERVER['HTTP_REFERER']);
 }

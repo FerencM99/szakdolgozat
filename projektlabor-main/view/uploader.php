@@ -18,21 +18,25 @@ $user = $userDB->listall();
 <link rel="stylesheet">
 
 <style>
-
 .button{
-	color: white;
-	margin-top: 0px;
-    border-radius: 30px 30px 30px 30px;
+  float: right;
+	margin-top: 80px;
+  margin-bottom: 20px;
+  border-radius: 30px 30px 30px 30px;
 	width: 180px;
 	background-color: #401b58;
-  	padding: 14px 25px;
-  	text-align: center;
-  	text-decoration: none;
-  	display: inline-block;
+  text-align: center;
+  text-decoration: none;
+ 	display: inline-block;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
 
 }
 /* Button used to open the contact form - fixed at the bottom of the page */
 .open-button {
+  margin-top: 80px;
   background-color: #401b58;
   color: white;
   padding: 16px 20px;
@@ -112,8 +116,8 @@ $user = $userDB->listall();
 <body>
 <div>
 
-	<p align ="right">
-		<input type="button"	style="width: 210px; right: 500px;" class="open-button"  onclick="document.location='upload_file.php'" value="új elem hozzáadása">
+	<p style="top: 10px; align=right;">
+		<input type="button" class="button"  onclick="document.location='upload_file.php'" value="új elem hozzáadása">
  		<input type="button" 	onclick="document.location='logout.php'" class="button" value="Kijelentkezes">
 	</p>
 
@@ -137,17 +141,16 @@ $user = $userDB->listall();
   </form>
 </div>
 
-
 <table style="margin-left:10%;" id="table"><thead><tr>
 
 <?php
 
 if (isset($_SESSION['user_logged_in']) == TRUE )
 {
-    if ($userDB->getLVL($_SESSION["username"])>=1)
+    if ($userDB->getLVL($_SESSION["username"])>1)
     {
     ?>
-    	<th style="width:50px;">ID</th>
+    	<th style="width:50px;">ID</a></th>
     <?php
     }
     ?>
@@ -166,7 +169,7 @@ if (isset($_SESSION['user_logged_in']) == TRUE )
           ?>
       <tr>
       <?php
-    if ($userDB->getLVL($_SESSION["username"])>=1)
+    if ($userDB->getLVL($_SESSION["username"])>1)
     {
     ?>
       <td><?php echo $res[$i]['ID'];?></td>
@@ -182,7 +185,6 @@ if (isset($_SESSION['user_logged_in']) == TRUE )
       <td><a href="../controller/download.php?id=<?php echo $res[$i]['ID']; ?>"><img src="img/letöltés.png" type="submit" ></a> </td>
 
       </tr>
-
     <?php
     }
 }
@@ -193,23 +195,12 @@ else
 ?>
 <style>
 
-  button {
-  background-color:#401b58;
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
-  border-radius: 8px;
-}
 #table {
 	width:90%;
 	border:2px solid black;
-    margin-top: 50px;
   background-color: white;
   margin-bottom: 200px;
+
 }
 td {
     border:2px solid black;

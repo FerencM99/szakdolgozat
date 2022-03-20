@@ -2,56 +2,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<div style="margin-top: 0px;">
+<div style="padding-bottom: 100px;">
     <?php
-   include 'header.php';
-
+      include 'header.php';
     ?>
 </div>
 
 
 <!-- Sidebar -->
-<div style="width:250px;" class="w3-sidebar w3-light-grey w3-bar-block" style="width:250px;">
-
-  <input type="text" style="margin-left:10px;margin-top:5px;" placeholder="Keresés.." name="search">
-      <button type="submit" style="margin-left:5px;margin-top:5px;"><i class="fa fa-search"></i></button>
-  
- 
-
-      <h3 class="w3-bar-item">Rendezés:</h3>
-
-<br>
-  <a style="margin-left:5px;">ID szerint</a>
-    <br>
-  <input type="checkbox" style="height:15px; width:15px; margin-left:50px;"> Növekvő sorrend
-    <span class="checkmark"></span>
-
-    <input type="checkbox" style="height:15px; width:15px; margin-left:50px;"> Csökkenő sorrend
-    <span class="checkmark"></span><br>
-
-    <a style="margin-left:5px;">Neptun kód szerint</a>
-    <br>
-  <input type="checkbox" style="height:15px; width:15px; margin-left:50px;"> Növekvő sorrend
-    <span class="checkmark"></span>
-
-    <input type="checkbox" style="height:15px; width:15px; margin-left:50px;"> Csökkenő sorrend
-    <span class="checkmark"></span><br>
-
-    <a style="margin-left:5px;">Felhasználó szintje szerint</a>
-    <br>
-  <input type="checkbox" style="height:15px; width:15px; margin-left:50px;"> Növekvő sorrend
-    <span class="checkmark"></span>
-
-    <input type="checkbox" style="height:15px; width:15px; margin-left:50px;"> Csökkenő sorrend
-    <span class="checkmark"></span><br>
-
-   <button type="submit">Keresés</i></button><br></h3>
-<br><br><br><br><br>
+<div style="width:250px;   margin-top: -46px;" class="w3-sidebar w3-light-grey w3-bar-block">
+<h1>Keresés</h1>
+<a>Felhasználó neve:</a>
+<input type="text" style="width:220px;" id="myInput" onkeyup="searchBar()" placeholder="irja be a  felhasználó nevét" title="Type in a name"><br>
+<a>Felhasználó szintje (0,1,2)</a>
+<input type="text" style="width:220px;" id="myInput2" onkeyup="searchBar2()" placeholder="irja be a  felhasználó szintjét" title="Type in a title"><br>
 </div>
 <!-- Táblázat -->
-
-<table id="table">
+<table id="table" class="tbl">
   <thead>
   <tr>
     <th>ID</th>
@@ -80,31 +47,63 @@
     <?php
       }
    ?>
+   </tbody></table>
+
+<script>
+  
+  function searchBar() {
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("table");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td")[1];
+      if (td) {
+        txtValue = td.textContent || td.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+        } else {
+          tr[i].style.display = "none";
+        }
+      }       
+    }
+  }
+  
+  
+  function searchBar2() {
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("myInput2");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("table");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td")[2];
+      if (td) {
+        txtValue = td.textContent || td.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+        } else {
+          tr[i].style.display = "none";
+        }
+      }       
+    }
+  }
+  </script>
 <style>
-#table {
+
+.tbl {
 	width:70%;
 	border:2px solid black;
-    margin-top: 50px;
-    margin-left: 25%;
+  margin-left: 25%;
   background-color: white;
+
 }
 td {
     border:2px solid black;
     text-align: center;
 }
-button {
-    background-color:#401b58;
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
-  border-radius: 12px;
-}
 </style>
-</tbody></table>
 
 <div style="background-color: rgb(255, 233, 198)">
 <?php 

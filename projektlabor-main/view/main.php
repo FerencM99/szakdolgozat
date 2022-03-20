@@ -1,6 +1,6 @@
 <html>
 
-<div style="margin-top: 0px;">
+<div>
     <?php
    include 'header.php';
     ?>

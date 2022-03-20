@@ -11,7 +11,8 @@
     {
       session_start ();
     }
- include '../view/header.php';
+ //include '../view/header.php';
+ include '../model/db.php';
  include '../model/categorysDB.php';
  $categorysDB = new categorysDB;
  $res =$categorysDB->listall();
