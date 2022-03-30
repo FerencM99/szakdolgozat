@@ -38,11 +38,6 @@ button {
 </style>
 </tbody>
 
-<div>
-<?php
-    include 'footer.php';
-    ?>
-</div>
 </html>
 
 

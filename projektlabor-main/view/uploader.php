@@ -118,30 +118,11 @@ $user = $userDB->listall();
 
 	<p style="top: 10px; align=right;">
 		<input type="button" class="button"  onclick="document.location='upload_file.php'" value="új elem hozzáadása">
- 		<input type="button" 	onclick="document.location='logout.php'" class="button" value="Kijelentkezes">
 	</p>
-
-	<div class="form-popup" id="myForm">
-  <form class="form-container"  method="POST" enctype="multipart/form-data">
-    <h1>Új elem feltöltése</h1>
-	<input type="text" placeholder="Ird be a fájl nevét" name="title" required>
-    
-    <label for="tipe"><b>Leírás:</b></label>
-    <input type="text" placeholder="A fájl leírása" name="link" required>
-    <input type="checkbox" checked="checked" style="height:25px; width:25px;"> Publikus
-    <span class="checkmark"></span>
-
-    <label style="margin-left:13px;" for="cars">Kategória:</label>
-
-  <br><input type="file" name="file" id="actual-btn" hidden/>
-  <label id="lbl" for="actual-btn" >Válassz fájlt</label>
-  <span id="file-chosen">Nincs fájl kiválasztva</span>
-  <br><br><input type="submit"  required onclick="document.location='../controller/addFile.php'" class="btn"/>
-      <button type="submit" class="btn cancel" onclick="closeForm()">Bezár</button>
-  </form>
+  
 </div>
 
-<table style="margin-left:10%;" id="table"><thead><tr>
+<table style="float: right;" id="table"><thead><tr>
 
 <?php
 

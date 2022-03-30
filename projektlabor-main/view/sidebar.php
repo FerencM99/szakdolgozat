@@ -14,16 +14,16 @@ if (session_status () == PHP_SESSION_NONE)
 <body>
 <!-- Sidebar -->
 
-<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:250px; float: left; top: 54px; height: 100%; z-index: 1; padding-top: 40px;">
+<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:280px; top: 54px; height: 100%; z-index: 1; padding-top: 40px;">
 <h1>Keresés</h1>
 <a>Fájl neve</a>
-<input type="text" style="width:250px; padding-left: 25px; background-image: url('img/search.png');   background-position: 1px 3px;   background-repeat: no-repeat;" id="myInput" onkeyup="searchBar()" placeholder="irja be a  fájl nevét" title="Type in a name"><br>
+<input type="text" style="margin-left: 10px; width:250px; padding-left: 25px; background-image: url('img/search.png');   background-position: 1px 3px;   background-repeat: no-repeat;" id="myInput" onkeyup="searchBar()" placeholder="irja be a  fájl nevét" title="Type in a name"><br>
 <a>Fájl leírása</a>
-<input type="text" style="width:250px; padding-left: 25px; background-image: url('img/search.png');   background-position: 1px 3px;    background-repeat: no-repeat;" id="myInput2" onkeyup="searchBar2()" placeholder="irja be a  leírást" title="Type in a title"><br>
+<input type="text" style="margin-left: 10px; width:250px; padding-left: 25px; background-image: url('img/search.png');   background-position: 1px 3px;    background-repeat: no-repeat;" id="myInput2" onkeyup="searchBar2()" placeholder="irja be a  leírást" title="Type in a title"><br>
 <a>Felhasználó neve</a>
-<input type="text" style="width:250px; padding-left: 25px; background-image: url('img/search.png');   background-position: 1px 3px;    background-repeat: no-repeat;" id="myInput3" onkeyup="searchBar3()" placeholder="irja be a  felhasználó nevét" title="Type in a title"><br>
+<input type="text" style="margin-left: 10px; width:250px; padding-left: 25px; background-image: url('img/search.png');   background-position: 1px 3px;    background-repeat: no-repeat;" id="myInput3" onkeyup="searchBar3()" placeholder="irja be a  felhasználó nevét" title="Type in a title"><br>
 <a>Fájl kategóriája</a>
-<input type="text" style="width:250px; padding-left: 25px; background-image: url('img/search.png');   background-position: 1px 3px;    background-repeat: no-repeat;"	id="myInput4" onkeyup="searchBar4()" placeholder="irja be a fájl kategóriát" title="Type in a title"><br>
+<input type="text" style="margin-left: 10px; width:250px; padding-left: 25px; background-image: url('img/search.png');   background-position: 1px 3px;    background-repeat: no-repeat;"	id="myInput4" onkeyup="searchBar4()" placeholder="irja be a fájl kategóriát" title="Type in a title"><br>
 </div>
 <script>
   

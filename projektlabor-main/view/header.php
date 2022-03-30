@@ -66,7 +66,8 @@ body {
 <body>
 <div class="topnav">
   <a class="active" href="main.php">Főoldal</a>
-  <a style="  float: right;color:yellow;"> <?php echo "Felhaszáló bejelenkezve: ".$_SESSION["username"]."[".$userLVL."]"; ?></a>
+  <a style="  float: right;color:yellow;"> <?php echo $_SESSION["username"]; ?></a>
+  <a style =" float: right;" class="active" href="logout.php"> Kijelentkezés</a>
     <?php
     if ($userLVL==1) {
         ?>

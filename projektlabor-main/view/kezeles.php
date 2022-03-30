@@ -10,12 +10,12 @@
 
 
 <!-- Sidebar -->
-<div style="width:250px;   margin-top: -46px;" class="w3-sidebar w3-light-grey w3-bar-block">
+<div style="width:280px;   margin-top: -46px;" class="w3-sidebar w3-light-grey w3-bar-block">
 <h1>Keresés</h1>
 <a>Felhasználó neve:</a>
-<input type="text" style="width:220px;" id="myInput" onkeyup="searchBar()" placeholder="irja be a  felhasználó nevét" title="Type in a name"><br>
+<input type="text" style=" margin-left: 10px; width:250px; padding-left: 25px; background-image: url('img/search.png');   background-position: 1px 3px;   background-repeat: no-repeat;" id="myInput" onkeyup="searchBar()" placeholder="irja be a  felhasználó nevét" title="Type in a name"><br>
 <a>Felhasználó szintje (0,1,2)</a>
-<input type="text" style="width:220px;" id="myInput2" onkeyup="searchBar2()" placeholder="irja be a  felhasználó szintjét" title="Type in a title"><br>
+<input type="text" style=" margin-left: 10px; width:250px; padding-left: 25px; background-image: url('img/search.png');   background-position: 1px 3px;   background-repeat: no-repeat;" id="myInput2" onkeyup="searchBar2()" placeholder="irja be a  felhasználó szintjét" title="Type in a title"><br>
 </div>
 <!-- Táblázat -->
 <table id="table" class="tbl">

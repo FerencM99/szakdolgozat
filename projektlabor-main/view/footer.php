@@ -9,6 +9,7 @@ footer {
   text-align: center;
   padding: 5px;
   background-color:rgb(255, 233, 198);
+  background-image: url("../img/szines.png");
   color: Black;
   margin-top: 550px;
 }
@@ -16,7 +17,10 @@ footer {
 </head>
 <body>
 <footer>
-  <h1 href="mailto:diplomaKozpont@gmail.com">diplomaKozpont@gmail.com</h1>
+  <a style="float: left; margin-left:300px;">Kapcsolat:</a><br><br>
+  <a style="float: left; margin-left:300px;">SharePoint@gmail.com</a><br>
+  <a style="float: left; margin-left:300px;">Pannon Egyetem </a><br>
+  <a style="float: left; margin-left:300px;">8200 Veszprém, Egyetem u. 10.</a>
 </footer>
 </body>
 </html>
