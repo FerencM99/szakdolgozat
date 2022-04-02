@@ -13,7 +13,7 @@
     ?>
 </div>
 
-<div style="width: 85%; float: right; margin-right: 25px;" >
+<div style="width: 85%; float: right;" >
 <?php
     include 'uploader.php';
     ?>

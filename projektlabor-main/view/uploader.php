@@ -18,6 +18,10 @@ $user = $userDB->listall();
 <link rel="stylesheet">
 
 <style>
+body
+{
+  
+}
 .button{
   float: right;
 	margin-top: 80px;
@@ -65,7 +69,7 @@ $user = $userDB->listall();
 /* Full-width input fields */
 .form-container input[type=text], .form-container input[type=tipus] {
   width: 100%;
-  padding: 15px;
+  padding: 5px;
   margin: 5px 0 22px 0;
   border: none;
   background: #f1f1f1;

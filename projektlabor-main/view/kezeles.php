@@ -18,7 +18,7 @@
 <input type="text" style=" margin-left: 10px; width:250px; padding-left: 25px; background-image: url('img/search.png');   background-position: 1px 3px;   background-repeat: no-repeat;" id="myInput2" onkeyup="searchBar2()" placeholder="irja be a  felhasználó szintjét" title="Type in a title"><br>
 </div>
 <!-- Táblázat -->
-<table id="table" class="tbl">
+<table id="table" class="tbl" style="float: right;">
   <thead>
   <tr>
     <th>ID</th>
@@ -95,9 +95,9 @@
 .tbl {
 	width:70%;
 	border:2px solid black;
-  margin-left: 25%;
+  margin-left: 100%;
   background-color: white;
-
+  float: right;
 }
 td {
     border:2px solid black;

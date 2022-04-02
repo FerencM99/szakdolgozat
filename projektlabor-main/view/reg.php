@@ -1,6 +1,6 @@
 <html>
 <head>
-<meta charset="utf-8">
+<meta name="viewport" content= "width=device-width, user-scalable=no" charset="utf-8">
 <link rel="stylesheet" href="css/reg.css">
 <?php
     if (session_status () == PHP_SESSION_NONE)
@@ -8,7 +8,7 @@
         session_start ();
     }
 ?>
-<div style="margin: -10px;">
+<div>
    <?php
    include 'header.php';
     ?>

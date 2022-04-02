@@ -32,8 +32,9 @@ $userLVL = $udb->getLVL($_SESSION["username"]);
 <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
 <style>
 body {
-  margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
+  float: left;
+  margin: 0px;
 }
 
 .topnav {
@@ -41,6 +42,7 @@ body {
   position: fixed;
   overflow: hidden;
   background-color: #401b58;
+
 }
 
 .topnav a {
