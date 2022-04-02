@@ -76,8 +76,8 @@
 <!-- Hozzáadás PopUp -->
 
 <div>
-	<p style="align= right;">
-		<input type="submit"	style="width: 210px; float: right; margin-bottom: 10px;" class="open-button"  onclick="openForm()" value="új elem hozzáadása">
+	<p style="align=right;">
+		<input type="submit"	style="width: 210px; float: right; margin-top: 0px;" class="open-button"  onclick="openForm()" value="új elem hozzáadása"><br>
 	</p>
 
 	<div class="form-popup" id="myForm">
@@ -150,10 +150,10 @@ button {
   border-radius: 8px;
 }
 #table {
-	width:90%;
+	width:80%;
 	border:2px solid black;
-  margin:0px;
-  margin-left: 5%;
+  margin-top:100px;
+  margin-left:100px;
   background-color: white;
 }
 td {
@@ -174,11 +174,7 @@ function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
 </script>
-<div>
-<?php
-    include 'footer.php';
-    ?>
-</div>
+
 </body>
 </html>
 

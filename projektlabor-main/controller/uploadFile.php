@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
     $user = $_SESSION["username"];
     $description = filter_input(INPUT_POST, 'description');
     $cat = filter_input(INPUT_POST, 'category');
-    $c = 0;
+    $c = 1;
     for($i=0;$i<count($res);$i++){
       if($pname == $res[$i]['Filename']){
         echo "baj van ".$i."+1"."-edik fájl neve ugyanez ";

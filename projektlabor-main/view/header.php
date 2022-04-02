@@ -33,7 +33,6 @@ $userLVL = $udb->getLVL($_SESSION["username"]);
 <style>
 body {
   font-family: Arial, Helvetica, sans-serif;
-  float: left;
   margin: 0px;
 }
 

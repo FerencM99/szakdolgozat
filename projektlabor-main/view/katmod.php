@@ -1,12 +1,11 @@
 <html>
 <head>
 <meta charset="utf-8">
-<link rel="stylesheet" href="css/reg.css">
+<link rel="stylesheet" href="css/katmod.css">
 
-<div style="margin-top: -10px; margin-left: -10px;">
+<div>
     <?php
    include 'header.php';
-   include '../model/filesDB.php';
    include '../model/categorysDB.php';
 
     ?>

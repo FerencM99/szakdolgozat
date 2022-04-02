@@ -126,7 +126,7 @@ body
   
 </div>
 
-<table style="float: right;" id="table"><thead><tr>
+<table style="float: right; margin-left:10px;" id="table"><thead><tr>
 
 <?php
 
@@ -135,7 +135,7 @@ if (isset($_SESSION['user_logged_in']) == TRUE )
     if ($userDB->getLVL($_SESSION["username"])>1)
     {
     ?>
-    	<th style="width:50px;">ID</a></th>
+    	<th style="width:80px;">ID</a></th>
     <?php
     }
     ?>
@@ -143,9 +143,9 @@ if (isset($_SESSION['user_logged_in']) == TRUE )
       <th style="width:500px;">Leírás</th> 
       <th style="width:200px;">Név</th> 
       <th style="width:100px;">Kategória</th>
-    	<th style="width:50px;">Törlés</th>
-      <th style="width:25px;">Módosítás</th>
-      <th style="width:25px;">Letöltés</th>
+    	<th style="width:80px;">Törlés</th>
+      <th style="width:50px;">Módosítás</th>
+      <th style="width:50px;">Letöltés</th>
         </thead>
         <tbody>
           <?php
@@ -184,6 +184,7 @@ else
 	width:90%;
 	border:2px solid black;
   background-color: white;
+  margin-right: 100px;
   margin-bottom: 200px;
 
 }

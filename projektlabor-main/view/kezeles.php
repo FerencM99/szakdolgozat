@@ -2,7 +2,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<div style="padding-bottom: 100px;">
+<link rel="stylesheet" href="css/kezeles.css">
+
+<div style="margin-top: 0px;">
     <?php
       include 'header.php';
     ?>
@@ -10,7 +12,7 @@
 
 
 <!-- Sidebar -->
-<div style="width:280px;   margin-top: -46px;" class="w3-sidebar w3-light-grey w3-bar-block">
+<div style="width:280px;   margin-top: 54px;" class="w3-sidebar w3-light-grey w3-bar-block">
 <h1>Keresés</h1>
 <a>Felhasználó neve:</a>
 <input type="text" style=" margin-left: 10px; width:250px; padding-left: 25px; background-image: url('img/search.png');   background-position: 1px 3px;   background-repeat: no-repeat;" id="myInput" onkeyup="searchBar()" placeholder="irja be a  felhasználó nevét" title="Type in a name"><br>
@@ -18,7 +20,7 @@
 <input type="text" style=" margin-left: 10px; width:250px; padding-left: 25px; background-image: url('img/search.png');   background-position: 1px 3px;   background-repeat: no-repeat;" id="myInput2" onkeyup="searchBar2()" placeholder="irja be a  felhasználó szintjét" title="Type in a title"><br>
 </div>
 <!-- Táblázat -->
-<table id="table" class="tbl" style="float: right;">
+<table id="table" class="tbl">
   <thead>
   <tr>
     <th>ID</th>
@@ -90,20 +92,6 @@
     }
   }
   </script>
-<style>
-
-.tbl {
-	width:70%;
-	border:2px solid black;
-  margin-left: 100%;
-  background-color: white;
-  float: right;
-}
-td {
-    border:2px solid black;
-    text-align: center;
-}
-</style>
 
 <div style="background-color: rgb(255, 233, 198)">
 <?php 

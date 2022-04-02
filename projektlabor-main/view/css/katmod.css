@@ -9,14 +9,14 @@ body{
 }
 
 .box{
-  width: 380px;
-  background: rgb(255, 220, 163);
-  border-radius: 20px;
-  box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
-  float:right;
-  margin-top:200px; 
+    width: 380px;
+    background: rgb(255, 220, 163);
+    border-radius: 20px;
+    box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+    margin-top: 200px;
+    margin-right: 100px;
+    float: right;
   }
-  
   .box .title{ 
       /* felső lila rész*/
     font-size: 35px;

@@ -1,0 +1,13 @@
+.tbl {
+    width:80%;
+	border:2px solid black;
+    background-color: white;
+    float: right;
+    margin-right: 20px;
+    margin-top: 200px;
+
+}
+td {
+    border:2px solid black;
+    text-align: center;
+}	
