@@ -58,7 +58,7 @@
   padding: 16px 20px;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 95%;
   margin-bottom: 10px;
   opacity: 0.8;
 }
@@ -85,10 +85,10 @@
     <h1>Új elem feltöltése</h1>
 
     <label for="name">Kategória neve</label>
-	<input name="catname" type="text" required placeholder="Ird be a kategória nevét" >
+	<input name="catname" type="text" style="width:300px;" required placeholder="Ird be a kategória nevét" >
     
     <label  for="tipe">Leírása</label>
-    <input type="text" name="description" required placeholder="A kategória leírása" >
+    <input type="text" name="description" style="width:300px;" required placeholder="A kategória leírása" >
 
     <button type="submit" onclick="window.location='../controller/newCategory.php'" class="btn">Feltöltés</button>
     <button type="submit" class="btn cancel" onclick="closeForm()">Bezár</button>

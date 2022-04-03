@@ -1,4 +1,5 @@
 <?php
+require '../model/db.php';
 require '../model/categorysDB.php';
 
 $ecat = new categorysDB();

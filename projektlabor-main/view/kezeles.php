@@ -98,6 +98,23 @@
     include 'footer.php';
     ?>
 </div>
+
+<style>
+  .tbl {
+    position: fixed;
+    width:75%;
+	border:2px solid black;
+    background-color: white;
+    float: right;
+    margin-left: 350px;
+    margin-top: 150px;
+
+}
+td {
+    border:2px solid black;
+    text-align: center;
+}	
+</style>
 </html>
 
 

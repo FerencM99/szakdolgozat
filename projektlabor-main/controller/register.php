@@ -7,7 +7,7 @@ $udb = new usersDB();
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $neptun = filter_input(INPUT_POST, 'neptun');
     $pass = filter_input(INPUT_POST, 'psw');
-    $userlevel = filter_input(INPUT_POST, 'userlvl');
+    $userlevel = filter_input(INPUT_POST, 'Userlvl');
 }
 
 $udb->register($neptun,$pass,$userlevel);

@@ -1,6 +1,6 @@
 <html>
 
-<div>
+<div style="margin:0px;">
     <?php
    include 'header.php';
     ?>
@@ -13,7 +13,7 @@
     ?>
 </div>
 
-<div style="width: 85%; float: right;" >
+<div>
 <?php
     include 'uploader.php';
     ?>

@@ -17,116 +17,18 @@ $user = $userDB->listall();
 <meta charset="UTF-8">
 <link rel="stylesheet">
 
-<style>
-body
-{
-  
-}
-.button{
-  float: right;
-	margin-top: 80px;
-  margin-bottom: 20px;
-  border-radius: 30px 30px 30px 30px;
-	width: 180px;
-	background-color: #401b58;
-  text-align: center;
-  text-decoration: none;
- 	display: inline-block;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-
-}
-/* Button used to open the contact form - fixed at the bottom of the page */
-.open-button {
-  margin-top: 80px;
-  background-color: #401b58;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  border-radius: 30px 30px 30px 30px;
-}
-
-/* The popup form - hidden by default */
-.form-popup {
-  display: none;
-  position:absolute;
-  top: 15%;
-  left: 45%;
-  border: 3px solid #401b58;
-  z-index: 9;
-}
-
-/* Add styles to the form container */
-.form-container {
-  max-width: 350px;
-  padding: 20px;
-  background-color: white;
-}
-
-/* Full-width input fields */
-.form-container input[type=text], .form-container input[type=tipus] {
-  width: 100%;
-  padding: 5px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
-}
-
-/* When the inputs get focus, do something */
-.form-container input[type=text]:focus, .form-container input[type=tipus]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-/* Set a style for the submit/login button */
-.form-container .btn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  margin-bottom: 5px;
-  opacity: 0.8;
-}
-
-/* Add a red background color to the cancel button */
-.form-container .cancel {
-  background-color: red;
-}
-
-  #lbl {
-  font-family: sans-serif;
-  background-color: indigo;
-  color: white;
-  padding: 16px 30px;
-  border: none;
-  cursor: pointer;
-  margin-bottom: 10px;
-}
-
-#file-chosen{
-  margin-left: 0.3rem;
-  font-family: sans-serif;
-}
-}
-</style>
-
 
 </head>
 <body>
 <div>
 
-	<p style="top: 10px; align=right;">
+	<p>
 		<input type="button" class="button"  onclick="document.location='upload_file.php'" value="új elem hozzáadása">
 	</p>
   
 </div>
 
-<table style="float: right; margin-left:10px;" id="table"><thead><tr>
+<table id="table"><thead><tr>
 
 <?php
 
@@ -139,7 +41,7 @@ if (isset($_SESSION['user_logged_in']) == TRUE )
     <?php
     }
     ?>
-      <th style="width:250px;">Fájl neve</th>
+      <th style="width:200px;">Fájl neve</th>
       <th style="width:500px;">Leírás</th> 
       <th style="width:200px;">Név</th> 
       <th style="width:100px;">Kategória</th>
@@ -179,39 +81,38 @@ else
 }
 ?>
 <style>
-
 #table {
-	width:90%;
+	width:80%;
+  position: fixed;
 	border:2px solid black;
   background-color: white;
-  margin-right: 100px;
-  margin-bottom: 200px;
-
+  margin-top: 200px;
+  margin-left:300px;
+  margin-bottom:300px;
+  float:right;
 }
 td {
     border:2px solid black;
     text-align: center;
 }
+
+.button{
+  margin: 60px;
+  float: right;
+  border-radius: 30px 30px 30px 30px;
+	width: 180px;
+	background-color: #401b58;
+  text-align: center;
+  text-decoration: none;
+ 	display: inline-block;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+
+}
 </style>
 </tbody></table>
-
-
-<script>
-function openForm() {
-  document.getElementById("myForm").style.display = "block";
-}
-
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
-}
-const actualBtn = document.getElementById('actual-btn');
-
-const fileChosen = document.getElementById('file-chosen');
-
-actualBtn.addEventListener('change', function(){
-  fileChosen.textContent = this.files[0].name
-})
-</script>
 
 
 </body>

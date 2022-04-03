@@ -77,7 +77,7 @@ class usersDB extends db
         $this->log('Felhasználó törlésre került (ID: '.$id.')');
     }
     function edit_user($id,$username=null,$pw=null,$userlvl=null) {
-        $this->log('Felhasználó modosításra került ('.$id.' | '.$username.' | '.$pw.' | '.$userlvl.')');
+        $this->log('Felhasználó modosításra került (ID: '.$id.' |Felhasználó: '.$username.' |Felhasználószint: '.$userlvl.')');
 
         $code = "UPDATE `users` SET";
 
