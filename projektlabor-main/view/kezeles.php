@@ -23,7 +23,6 @@
 <table id="table" class="tbl">
   <thead>
   <tr>
-    <th>ID</th>
   	<th>Neptunkód</th>
   	<th>Felhasználó Szintje</th>
   	<th>Törlés</th>
@@ -40,7 +39,6 @@
       {
     ?>
       <tr>
-      <td><?php echo $all[$i]["ID"];?></td>
       <td><?php echo $all[$i]["Username"];?></td>
       <td><?php echo $all[$i]["Userlvl"];?></td>
       <td><a href="../controller/delete_user.php?id=<?php echo $all[$i]["ID"]; ?>"><img src="img/x.png" type="submit" ></a></td>
@@ -60,7 +58,7 @@
     table = document.getElementById("table");
     tr = table.getElementsByTagName("tr");
     for (i = 0; i < tr.length; i++) {
-      td = tr[i].getElementsByTagName("td")[1];
+      td = tr[i].getElementsByTagName("td")[0];
       if (td) {
         txtValue = td.textContent || td.innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
@@ -80,7 +78,7 @@
     table = document.getElementById("table");
     tr = table.getElementsByTagName("tr");
     for (i = 0; i < tr.length; i++) {
-      td = tr[i].getElementsByTagName("td")[2];
+      td = tr[i].getElementsByTagName("td")[1];
       if (td) {
         txtValue = td.textContent || td.innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {

@@ -34,13 +34,7 @@ $user = $userDB->listall();
 
 if (isset($_SESSION['user_logged_in']) == TRUE )
 {
-    if ($userDB->getLVL($_SESSION["username"])>1)
-    {
-    ?>
-    	<th style="width:80px;">ID</a></th>
-    <?php
-    }
-    ?>
+?>
       <th style="width:200px;">Fájl neve</th>
       <th style="width:500px;">Leírás</th> 
       <th style="width:200px;">Név</th> 
@@ -55,14 +49,6 @@ if (isset($_SESSION['user_logged_in']) == TRUE )
           {
           ?>
       <tr>
-      <?php
-    if ($userDB->getLVL($_SESSION["username"])>1)
-    {
-    ?>
-      <td><?php echo $res[$i]['ID'];?></td>
-    <?php
-    }
-    ?>
     	<td><?php echo $res[$i]['Filename'];?></td>
       <td><?php echo $res[$i]['Link'];?></td>
       <td><?php echo $res[$i]['Username'];?></td>
