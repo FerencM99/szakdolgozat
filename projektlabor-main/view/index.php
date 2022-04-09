@@ -22,14 +22,14 @@ Bejelentkezés</div>
         <div class="field">
           <input type="text" required id="neptun" name="neptun" placeholder="Neptun kód">
         </div>
-<div class="field">
+        <div class="field">
           <input type="password" id="password" name="password" required placeholder="Jelszó">
         </div>
 <div class="content">
    
 <div>
     <button class="btn" type="submit" value="Submit">Bejelentkezés</button>
-        </div>
+</div>
 
 </form>
 </div>
