@@ -27,7 +27,7 @@ if($res[0]['code']== 200)
 
 else 
 {
-	$_SESSION['login_failure'] = "Hib�s felhaszn�l�n�v vagy jelsz�";
+	$_SESSION['login_failure'] = "Hibás felhasználónév vagy jelszó";
 	header('Location: ../view/index.php');
 }
  ?>

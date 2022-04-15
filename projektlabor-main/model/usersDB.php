@@ -43,8 +43,7 @@ class usersDB extends db
         }
         else {
             $result[0]['code']=200;
-            $r = $this->getLVL($username);
-            $this->log('Sikeres bejelentkezés ('.$username.', '.$r.')');
+            $this->log('Sikeres bejelentkezés ('.$username.')');
             echo "siker!";
         }
         return $result;
@@ -58,7 +57,7 @@ class usersDB extends db
 
         if (count($check)==0) {
             $this->select("INSERT INTO `users`(`Username`, `Password`, `Userlvl`) VALUES ('" . $username . "' , '" . $pw . "' , '" . $userlvl . "');");
-            $this->log('Sikeres felhasználó regisztrálás ('.$username.', '.$userlvl.')');
+            $this->log('Sikeres felhasználó regisztrálás ('.$username.')');
 
             $result = 1;
         }

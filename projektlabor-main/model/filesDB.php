@@ -13,7 +13,7 @@ class filesDB extends db
         $this->log($ID." fájl törölve lett");
     }
     function editF($id,$CatName=null,$description=null) {
-        $this->log('Felhasználó modosításra került ('.$id.' | '.$CatName.' | '.$description.')');
+        $this->log('Fájl modosításra került ('.$id.' | '.$CatName.' | '.$description.')');
 
         $code = "UPDATE `files` SET";
 
@@ -38,7 +38,7 @@ class filesDB extends db
             $description = $data[0]['Link'];
         }
         $this->select("UPDATE `files` SET `CatName`='".$CatName."',`Link`='".$description."' WHERE `ID` = '".$ID."' ;");
-        $this->log($ID."-es fájl modosításra került");
+        $this->log($ID."-es fájl modosításra került. kategória neve: ".$CatName.", leírása: ".$description);
 
     }
     function getfiledata($ID) {

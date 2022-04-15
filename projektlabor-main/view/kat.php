@@ -97,14 +97,6 @@
 
 
 <table id="table"><thead><tr>
-    <?php
-    if ($userDB->getLVL($_SESSION["username"])>1)
-    {
-    ?>
-	    <th style="width: 50px;">ID</th>
-    <?php
-    }
-    ?>
 	<th style="width: 200px;">Kategória neve</th>
   <th style="width: 250px;">Leírása</th> 
 	<th style="width: 50px;">Törlés</th>
@@ -122,14 +114,6 @@
       {
         ?>
     <tr>
-    <?php
-    if ($userDB->getLVL($_SESSION["username"])>1)
-    {
-    ?>
-      <td><?php echo $res[$i]['ID'];?></td>
-    <?php
-    }
-    ?>
 	  <td><?php echo $res[$i]['CatName'];?></td>
     <td><?php echo $res[$i]['Description'];?></td>
     <td><a href="../controller/delete_cat.php?id=<?php echo $res[$i]['ID']; ?>"><img src="img/x.png" type="submit" ></a> </td>

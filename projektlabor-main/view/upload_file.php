@@ -7,11 +7,10 @@
 
 <div style="margin-top: 0px;">
     <?php
-    if (session_status () == PHP_SESSION_NONE)
+  if (session_status () == PHP_SESSION_NONE)
     {
       session_start ();
     }
- //include '../view/header.php';
  include '../model/db.php';
  include '../model/categorysDB.php';
  $categorysDB = new categorysDB;
@@ -115,7 +114,7 @@ form .content .checkbox{
 
 <div class="csomag">
       <div class="title">
-Bejelentkezés</div>
+Tölts fel egy új fájlt</div>
 <form method="POST" action="../controller/uploadFile.php" enctype="multipart/form-data">
         <div class="field">
             <input type="text" name="description" required placeholder="A fájl leírása" >

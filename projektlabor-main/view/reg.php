@@ -24,7 +24,7 @@
           <input name="neptun" type="text" required placeholder="Neptun kód">
         </div>
     <div class="field">
-          <input name="psw" type="psw" required placeholder="Jelszó">
+          <input name="psw" type="password" required placeholder="Jelszó">
         </div>
 
         <div name="userlvl" class="field">

@@ -1,7 +1,8 @@
 <?php
 session_start();
-$_SESSION['user_logged_in'] = FALSE;
+if($_SESSION['user_logged_in'] = FALSE){
 session_destroy();
+}
  
  
 if(isset($_COOKIE['series_id']) && isset($_COOKIE['remember_token'])){
